@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+data/cache/
+.env
+*.csv
+.tools/
+~$*.xlsx
+
+# 可选：本地上游克隆（.cursor/agents 已由脚本拷贝入内；可不提交 entire vendor）
+third_party/agency-agents-zh/

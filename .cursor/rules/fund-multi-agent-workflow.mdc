@@ -1,0 +1,24 @@
+---
+description: 基金域仍仅用 agency-agents-zh 原文角色；全链路须经过 PM 拆任务与 agents-orchestrator 编排，见 workflows/agency-operating-model.md。
+alwaysApply: false
+globs:
+  - "**/cn_fund_analysis/**"
+  - "**/.cursor/agents/**"
+  - "**/workflows/**"
+  - "AGENTS.md"
+  - "scripts/sync-agency-agents.ps1"
+---
+
+# 国内基金多智能体规则（agency-agents-zh only）
+
+1. **全链路**：默认遵循 `workflows/agency-operating-model.md`（**提示词工程师** → **高级项目经理** → **智能体编排者** → 基金域子流水线）；用户声明「仅基金子流程」时可只跑 `workflows/fund-advisory-pipeline.md`。
+2. **智能体正文**：仅使用 `.cursor/agents/` 下已拷贝的 [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh) 原文；**禁止**在本仓库撰写人设正文（更新请跑 `scripts/sync-agency-agents.ps1`）。
+3. **量化事实**：`engineering-data-engineer` 语境执行 `cn-fund` / 模块代码；**禁止**编造净值与回撤。
+4. **新闻**：`marketing-daily-news-briefing` 语境联网检索；**禁止**虚构链接与日期。
+5. **研究**：`finance-investment-researcher` 双面论证与可证伪条件；禁止「稳赚」表述。
+6. **质检**：`testing-reality-checker` 对证据与终稿矛盾处要求修订。
+7. **编排**：`agents-orchestrator` 负责任务交接、质量循环与终稿免责声明（非投顾、历史不代表未来）。
+8. **Skill**：本仓库不自写 `SKILL.md`；见 `AGENTS.md`。
+9. **运行日目录**：基金流水线开始前须建立 `data/YYYY-MM-DD/`；最终指标宽表须 `cn-fund persist-run` 写入该目录下 `fund_metrics_runs.xlsx`，同日多次自动新增 `Run_***` Sheet。
+
+基金域步骤与 JSON 字段见 `workflows/fund-advisory-pipeline.md`。

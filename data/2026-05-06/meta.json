@@ -1,0 +1,23 @@
+{
+  "run_folder_date": "2026-05-06",
+  "fund_nav_as_of": "2026-04-30",
+  "topic": "sector_rotation_new_energy_semiconductor_chip_compute_ai_tech",
+  "pipeline": "workflows/agency-operating-model.md",
+  "commands_sample": [
+    "cn-fund report 001410",
+    "cn-fund report 002190",
+    "cn-fund report 008887",
+    "cn-fund report 007300",
+    "cn-fund report 012552",
+    "cn-fund report 008281",
+    "cn-fund report 017853",
+    "cn-fund report 012321",
+    "cn-fund report 008020",
+    "cn-fund report 008585",
+    "cn-fund report 001361",
+    "cn-fund report 001538"
+  ],
+  "note": "叙事排序非业绩承诺；算力以云计算联接为代理；半导体与芯片高度重叠。",
+  "metrics_workbook": "fund_metrics_runs.xlsx",
+  "metrics_workbook_note": "同日多次 persist-run 追加 Run_001、Run_002…；输入示例 run_table_seed.json"
+}
