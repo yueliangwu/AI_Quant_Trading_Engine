@@ -31,6 +31,7 @@ Markdown 报告（`01_*.md` 等）可与 `.xlsx` 并存于同一日期目录。
 | `marketing-daily-news-briefing.md` | `marketing/marketing-daily-news-briefing.md` |
 | `finance-investment-researcher.md` | `finance/finance-investment-researcher.md` |
 | `testing-reality-checker.md` | `testing/testing-reality-checker.md` |
+| `legal-compliance-checker.md`（可选） | `support/support-legal-compliance-checker.md` |
 
 ## 推荐执行顺序（全链路）
 
@@ -62,7 +63,7 @@ flowchart TD
 
 ### 4. 基金域（嵌套）
 
-编排者触发 **`workflows/fund-advisory-pipeline.md`** 中的子图（数据 ∥ 新闻 → 研究 → 现实检验 → 编排收口）。
+编排者触发 **`workflows/fund-advisory-pipeline.md`** 中的子图（数据 ∥ 新闻 → 研究 → 现实检验 →〔可选〕法务用语合规 → 编排收口）。
 
 ## 交接物（项目契约）
 
@@ -71,6 +72,7 @@ flowchart TD
 | `OPTIMIZED_BRIEF` | `prompt-engineer` |
 | `TASK_BOARD` | `project-manager-senior` |
 | `DATA_FACTS` / `NEWS_BRIEF` / `RESEARCH_MEMO` / `REALITY_CHECK` | 域智能体（见基金流水线文档） |
+| `LEGAL_REVIEW`（可选） | `legal-compliance-checker` |
 | `FINAL_DELIVERABLE` | `agents-orchestrator` |
 
 **落盘**：建议写入 `data/YYYY-MM-DD/`（运行当日日期目录），详见 `workflows/how-to-invoke-real-agents.md`。

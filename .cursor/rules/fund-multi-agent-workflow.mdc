@@ -17,8 +17,9 @@ globs:
 4. **新闻**：`marketing-daily-news-briefing` 语境联网检索；**禁止**虚构链接与日期。
 5. **研究**：`finance-investment-researcher` 双面论证与可证伪条件；禁止「稳赚」表述。
 6. **质检**：`testing-reality-checker` 对证据与终稿矛盾处要求修订。
-7. **编排**：`agents-orchestrator` 负责任务交接、质量循环与终稿免责声明（非投顾、历史不代表未来）。
-8. **Skill**：本仓库不自写 `SKILL.md`；见 `AGENTS.md`。
-9. **运行日目录**：基金流水线开始前须建立 `data/YYYY-MM-DD/`；最终指标宽表须 `cn-fund persist-run` 写入该目录下 `fund_metrics_runs.xlsx`，同日多次自动新增 `Run_***` Sheet。
+7. **法务（可选）**：对外分发或易被理解为投顾的终稿，单独委派 `legal-compliance-checker` 做用语与合规边界审查；不替代投研结论、不代替持牌投顾。
+8. **编排**：`agents-orchestrator` 负责任务交接、质量循环与终稿免责声明（非投顾、历史不代表未来）。
+9. **Skill**：本仓库不自写 `SKILL.md`；见 `AGENTS.md`。
+10. **运行日目录**：基金流水线开始前须建立 `data/YYYY-MM-DD/`；最终指标宽表须 `cn-fund persist-run` 写入该目录下 `fund_metrics_runs.xlsx`，同日多次自动新增 `Run_***` Sheet。
 
 基金域步骤与 JSON 字段见 `workflows/fund-advisory-pipeline.md`。

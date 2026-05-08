@@ -27,7 +27,8 @@ $Pairs = @(
     @{ Src = "engineering\engineering-data-engineer.md"; Dst = "engineering-data-engineer.md" },
     @{ Src = "marketing\marketing-daily-news-briefing.md"; Dst = "marketing-daily-news-briefing.md" },
     @{ Src = "finance\finance-investment-researcher.md"; Dst = "finance-investment-researcher.md" },
-    @{ Src = "testing\testing-reality-checker.md"; Dst = "testing-reality-checker.md" }
+    @{ Src = "testing\testing-reality-checker.md"; Dst = "testing-reality-checker.md" },
+    @{ Src = "support\support-legal-compliance-checker.md"; Dst = "legal-compliance-checker.md" }
 )
 
 foreach ($p in $Pairs) {

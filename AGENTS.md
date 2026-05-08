@@ -7,7 +7,7 @@
 - **全链路工作流**：`workflows/agency-operating-model.md`（提示词 → PM → 编排者 → 基金域）。
 - **基金域子流程**：`workflows/fund-advisory-pipeline.md`。
 
-### 本项目选用的官方角色文件（7 个）
+### 本项目选用的官方角色文件（8 个）
 
 | 文件 | 上游路径 | 用途 |
 |------|----------|------|
@@ -18,6 +18,7 @@
 | `marketing-daily-news-briefing.md` | `marketing/marketing-daily-news-briefing.md` | 要闻简报 |
 | `finance-investment-researcher.md` | `finance/finance-investment-researcher.md` | 投资研究（双面论证） |
 | `testing-reality-checker.md` | `testing/testing-reality-checker.md` | 现实检验 / 质检 |
+| `legal-compliance-checker.md` | `support/support-legal-compliance-checker.md` | **法务合规员**：面向公开分发的终稿用语、非投顾与宣传边界审查（可选门禁） |
 
 ### 输入网关（Cursor Rule）
 
@@ -43,7 +44,7 @@
 
 ### agency-agents-zh 能力边界说明
 
-上游库**没有**名为「公募基金专员」的单独 `.md`；基金量化执行映射为 **数据工程师**，研究与质检映射为 **投资研究员 / 现实检验者**，治理层使用 **提示词工程师 + 高级项目经理 + 智能体编排者**。
+上游库**没有**名为「公募基金专员」或「组合决策机器人」的单独 `.md`；“基金决策”在本项目中仅能落地为 **研究性排序、情景与风险框架**，投顾式结论须拒绝；执行侧仍为 **数据工程师 + 投资研究员 + 现实检验者**，若产出将对外发布或易被理解为投资建议，可加 **法务合规员** 做用语闸门。
 
 ---
 
