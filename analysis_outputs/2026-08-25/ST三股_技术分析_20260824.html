@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>龙大/京蓝/发展 技术分析 · 2026-08-24</title>
+<style>
+  :root{--bg:#0f1115;--card:#171a21;--card2:#1d212b;--line:#2a2f3a;--txt:#e6e9ef;--sub:#9aa3b2;--red:#ff5b5b;--green:#3fd07f;--blue:#5aa9ff;--amber:#ffb347;--purple:#b88bff;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.65;}
+  .wrap{max-width:1100px;margin:0 auto;padding:26px 20px 60px;}
+  h1{font-size:24px;margin:0 0 6px;}
+  h2{font-size:18px;margin:30px 0 10px;padding-left:10px;border-left:4px solid var(--blue);}
+  h3{font-size:14.5px;margin:16px 0 6px;color:var(--sub);}
+  .meta{color:var(--sub);font-size:13px;margin-bottom:8px;}
+  .note{background:rgba(255,179,71,.10);border:1px solid rgba(255,179,71,.4);border-radius:10px;padding:12px 14px;margin:12px 0;color:#ffd9a0;font-size:13px;}
+  .stock{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:16px 0;}
+  .stock h2{border-left-color:var(--amber);}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13px;}
+  th,td{border:1px solid var(--line);padding:8px 9px;vertical-align:top;text-align:left;}
+  th{background:var(--card2);font-weight:700;}
+  td{background:var(--card);}
+  .neg{color:var(--red);}
+  .pos{color:var(--green);}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr;}}
+  .box{border:1px solid var(--line);border-radius:10px;padding:11px 13px;background:var(--card);}
+  .box h4{margin:0 0 6px;font-size:14px;}
+  .pill{display:inline-block;font-size:11.5px;padding:1px 7px;border-radius:5px;margin:1px 2px;}
+  .pill.zhu{background:rgba(90,169,255,.18);color:var(--blue);}
+  .pill.you{background:rgba(184,139,255,.18);color:var(--purple);}
+  .pill.san{background:rgba(255,179,71,.16);color:var(--amber);}
+  .kline{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;color:var(--sub);white-space:pre;line-height:1.5;background:#0c0e12;border:1px solid var(--line);border-radius:8px;padding:10px;overflow-x:auto;}
+  .up{color:var(--red);} .dn{color:var(--green);}
+  .warn{color:var(--amber);}
+  .footer{margin-top:28px;color:var(--sub);font-size:12px;border-top:1px solid var(--line);padding-top:14px;}
+  b.hl{color:var(--amber);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>龙大（ST龙大 002726）· 京蓝（ST京蓝 000711）· 发展（*ST发展 000838）<br>技术分析报告 · 2026-08-24</h1>
+<div class="meta">数据源：腾讯日K接口（web.ifzq.gtimg.cn，真实成交数据，已交叉核验身份）｜ K线窗口：120 交易日 ｜ 分析层级：K线形态 / 均线 / 支撑压力 / 量价与资金推断 / 本周区间</div>
+
+<div class="note">⚠️ <b>资金流向数据可用性说明（务必先读）</b>：本沙箱网络环境下，<b>主力/游资/散户净流向的权威接口全部不可用</b>——东方财富 push2 / push2his 资金日K 均返回 404（主机封禁）、腾讯 zjlx 主力资金接口已下线、新浪资金流接口返回"Service not valid"。因此本报告"资金意图"部分<b>不提供编造的净流向金额</b>，改用<b>真实量价关系（放量/缩量、阴阳实体、上下影、量比）做定性推断</b>，标注为"量价推断"。如需精确主力/游资/散户净流向，请在本地东方财富/同花顺终端核验。</div>
+
+<!-- ================= 龙大 ================= -->
+<div class="stock">
+  <h2>① 龙大（ST龙大 · 002726）</h2>
+  <div class="grid2">
+    <div class="box"><h4>实时与均线</h4>
+      <ul style="margin:4px 0;padding-left:18px">
+        <li>现价 <b class="pos">2.90</b>（昨收2.77，<span class="pos">+4.69%</span>）</li>
+        <li>MA5=2.77 ｜ MA10=2.50 ｜ MA20=2.30 ｜ MA60=1.83</li>
+        <li><b class="pos">均线多头排列</b>（MA5&gt;MA10&gt;MA20&gt;MA60），典型上升通道</li>
+        <li>区间最大涨幅 <b class="hl">+145.8%</b>（起涨低点 06-30 的 1.18）</li>
+      </ul>
+    </div>
+    <div class="box"><h4>关键支撑 / 压力</h4>
+      <ul style="margin:4px 0;padding-left:18px">
+        <li><b>压力</b>：3.02（08-21 前高）→ 3.17（60日高）</li>
+        <li><b>支撑</b>：2.77（MA5）→ 2.56（08-24 下影低）→ 2.50（MA10 强支撑）</li>
+        <li>8-24 长下影 0.24（低 2.56 收回 2.90）= 下档承接强</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>K线形态（末10日）</h3>
+  <div class="kline">08-11 阳 2.16→2.19   08-12 阴 2.21→2.18
+08-13 阴 2.16→2.12   08-14 阳 2.16→2.33 ←放量启动
+08-17 阳 2.36→2.36   08-18 阳 2.37→2.55
+08-19 阳 2.46→2.68   08-20 阳 2.66→2.95 ←三连阳放量上攻
+08-21 阴 2.94→2.77 ←高3.02长上影(量155万峰值·抛压)
+08-24 阳 2.80→2.90 ←低2.56长下影(量129万·洗盘承接)</div>
+
+  <h3>量价关系与资金意图（量价推断）</h3>
+  <table>
+    <tr><th style="width:16%">主体</th><th style="width:14%">方向</th><th style="width:18%">量级(推断)</th><th>依据</th></tr>
+    <tr><td><span class="pill zhu">主力</span></td><td class="pos">净流入(偏强)</td><td>中等·持续</td><td>8-14~8-20 三连阳量递增(122→138→141万)，均线多头锁仓；8-24 缩量长下影阳，未出现持续放量出货</td></tr>
+    <tr><td><span class="pill you">游资</span></td><td>活跃</td><td>中</td><td>8-21 单日巨量155万+长上影，典型短线资金冲高兑现/博弈；个股弹性大(ST±10%)</td></tr>
+    <tr><td><span class="pill san">散户</span></td><td>分歧</td><td>中</td><td>高位长上影(8-21)伴随追高盘，8-24 下探2.56有恐慌抛压后被承接</td></tr>
+  </table>
+  <p><b>意图研判</b>：8 月中旬<b>主力拉升建仓/推升</b>特征明确（放量三连阳）；8-21 高位长上影=获利盘+游资分歧；8-24 缩量长下影阳=<b>洗盘后承接</b>，主力未明显出清，仍处强势整理。整体为"拉升→高位洗盘"阶段，非出货。</p>
+
+  <h3>本周（08-24~08-28）走势预判</h3>
+  <ul style="margin:4px 0;padding-left:18px">
+    <li><b>区间</b>：大概率 2.55–3.05 高位震荡偏强；放量站稳 3.02 则打开至 3.17+</li>
+    <li><b>变盘节点</b>：3.02 前高突破（放量确认则转强；缩量冲高回落则延续洗盘）</li>
+    <li class="warn">风险：已涨 145%，高位长上影提示抛压；ST±10% 波动剧烈；摘帽预期若落空易急跌</li>
+  </ul>
+</div>
+
+<!-- ================= 京蓝 ================= -->
+<div class="stock">
+  <h2>② 京蓝（ST京蓝 · 000711）</h2>
+  <div class="grid2">
+    <div class="box"><h4>实时与均线</h4>
+      <ul style="margin:4px 0;padding-left:18px">
+        <li>现价 <b class="pos">6.60</b>（昨收6.44，<span class="pos">+2.48%</span>）</li>
+        <li>MA5=6.23 ｜ MA10=6.10 ｜ MA20=5.58 ｜ MA60=5.32</li>
+        <li><b class="pos">均线多头排列</b>，但股价远离 MA20（+18%），乖离偏大</li>
+        <li>区间最大涨幅 <b class="hl">+131.6%</b>（起涨低点 02-11 的 2.85）</li>
+      </ul>
+    </div>
+    <div class="box"><h4>关键支撑 / 压力</h4>
+      <ul style="margin:4px 0;padding-left:18px">
+        <li><b>压力</b>：6.74（08-24 触及的前高）→ 突破看 7.0+</li>
+        <li><b>支撑</b>：6.23（MA5）→ 6.10（MA10）→ 5.38（08-18 长下影低）</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>K线形态（末10日）</h3>
+  <div class="kline">08-11 阳 5.59→5.60   08-12 阳 5.72→6.09 ←放量大阳启动(量122万)
+08-13 阴 6.14→6.05   08-14 阳 6.11→6.24
+08-17 阴 6.12→5.85   08-18 阳 5.78→5.88 ←低5.38长下影0.40(强承接)
+08-19 阳 6.00→6.13   08-20 阳 5.87→6.11
+08-21 阳 6.30→6.44   08-24 阳 6.38→6.60 ←温和放量逼近前高6.74</div>
+
+  <h3>量价关系与资金意图（量价推断）</h3>
+  <table>
+    <tr><th style="width:16%">主体</th><th style="width:14%">方向</th><th style="width:18%">量级(推断)</th><th>依据</th></tr>
+    <tr><td><span class="pill zhu">主力</span></td><td class="pos">净流入(锁仓)</td><td>中·稳定</td><td>8-12 放量大阳后，高位横盘 11 天量能逐步萎缩(8-20 量106万最低)，横盘缩量=锁仓/洗盘，无放量滞涨出货迹象</td></tr>
+    <tr><td><span class="pill you">游资</span></td><td>间歇活跃</td><td>中</td><td>8-18 长下影0.40(低5.38)显示短线资金低吸；整体未连续打板</td></tr>
+    <tr><td><span class="pill san">散户</span></td><td>浮筹减少</td><td>低</td><td>横盘期量缩，散户跟风弱，筹码趋于沉淀</td></tr>
+  </table>
+  <p><b>意图研判</b>：8-12 <b>主力启动</b>后进入<b>高位横盘锁仓洗盘</b>，量价配合健康（价不跌、量渐缩）。8-24 温和放量阳线逼近前高 6.74，有<b>二次上攻蓄势</b>意图。尚未出现出货特征。</p>
+
+  <h3>本周（08-24~08-28）走势预判</h3>
+  <ul style="margin:4px 0;padding-left:18px">
+    <li><b>区间</b>：6.0–6.9 横盘偏强；放量突破 6.74 则看 7.0+</li>
+    <li><b>变盘节点</b>：6.74 前高突破（需放量确认，否则回踩 MA5/MA10 洗盘）</li>
+    <li class="warn">风险：累计涨幅 131% 居三只之首，乖离 MA20 达 +18%，获利盘最重；ST±10% 下回撤快</li>
+  </ul>
+</div>
+
+<!-- ================= 发展 ================= -->
+<div class="stock">
+  <h2>③ 发展（*ST发展 · 000838）</h2>
+  <div class="grid2">
+    <div class="box"><h4>实时与均线</h4>
+      <ul style="margin:4px 0;padding-left:18px">
+        <li>现价 <b class="pos">2.98</b>（08-21 收2.81，<span class="pos">+6.05%</span>）</li>
+        <li>MA5=2.76 ｜ MA10=2.79 ｜ MA20=2.57 ｜ MA60=2.06</li>
+        <li>多头但 <b>MA5 微低于 MA10</b>（2.76&lt;2.79），短期均线轻微纠缠（整理）</li>
+        <li>区间最大涨幅 <b class="hl">+106.9%</b>（起涨低点 06-22 的 1.44）</li>
+      </ul>
+    </div>
+    <div class="box"><h4>关键支撑 / 压力</h4>
+      <ul style="margin:4px 0;padding-left:18px">
+        <li><b>压力</b>：3.07（08-24 高）→ 3.17（08-13 前高）</li>
+        <li><b>支撑</b>：2.76（MA5）→ 2.57（MA20）→ 2.55（08-20 低）</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>K线形态（末10日）</h3>
+  <div class="kline">08-11 阳 2.60→2.62   08-12 阳 2.70→2.88
+08-13 阴 3.00→2.93 ←高3.17长上影(见顶回落)
+08-14 阴 2.88→2.81   08-17 阳 2.78→2.82
+08-18 阴 2.80→2.65   08-19 阳 2.60→2.62 ←缩量至42万(地量)
+08-20 阳 2.62→2.75   08-21 阳 2.74→2.81
+08-24 阳 2.79→2.98 ←放量(量66万·量比1.37)再攻前高</div>
+
+  <h3>量价关系与资金意图（量价推断）</h3>
+  <table>
+    <tr><th style="width:16%">主体</th><th style="width:14%">方向</th><th style="width:18%">量级(推断)</th><th>依据</th></tr>
+    <tr><td><span class="pill zhu">主力</span></td><td class="pos">净流入(增量)</td><td>中强·回升</td><td>8-13 见高3.17后<b>缩量回调至地量42万</b>(洗盘干净)，8-24 <b>放量66万(量比1.37)</b>阳线再攻前高，主力二次上攻意图最明确</td></tr>
+    <tr><td><span class="pill you">游资</span></td><td>活跃</td><td>中</td><td>8-13 长上影+8-24 放量，短线资金博弈重整预期</td></tr>
+    <tr><td><span class="pill san">散户</span></td><td>观望</td><td>低</td><td>回调期地量，散户惜售/离场，浮筹轻</td></tr>
+  </table>
+  <p><b>意图研判</b>：8 月初<b>主力拉升至 3.17</b> → 中旬<b>缩量洗盘（地量 42 万）</b> → 8-24 <b>放量再攻</b>。三只中<b>资金活性最强、洗盘最干净</b>，与"预重整备案+投资人签约"的硬性重整进展(公开披露)形成信号对齐。</p>
+
+  <h3>本周（08-24~08-28）走势预判</h3>
+  <ul style="margin:4px 0;padding-left:18px">
+    <li><b>区间</b>：2.6–3.2 震荡上攻；放量突破 3.17 则看 3.5 一带</li>
+    <li><b>变盘节点</b>：3.17 前高突破（重整执行新公告为潜在催化）</li>
+    <li class="warn">风险：*ST 若重整执行不及预期/年报仍资不抵债则终止上市；短线追高 3.17 失败易回踩 MA20</li>
+  </ul>
+</div>
+
+<!-- ================= 整体 ================= -->
+<h2>④ 整体资金偏好判断（量价推断）</h2>
+<div class="box" style="border-color:var(--amber)">
+  <ul style="margin:4px 0;padding-left:18px">
+    <li><b>板块共性</b>：三只均处<b>多头排列、7月启动后高位强势</b>，属同一"ST反转/重整预期"资金主线（与政策+产业+新闻+资金四层信号对齐框架吻合）。</li>
+    <li><b>资金轮动</b>：<span class="pill zhu">发展</span>今日放量最强（量比1.37），资金最活跃、洗盘最净，<b>获增量优先</b>；<span class="pill zhu">龙大</span>、<span class="pill zhu">京蓝</span>缩量整理，呈<b>锁仓待攻</b>。</li>
+    <li><b>偏好排序（强势度）</b>：发展(增量上攻) &gt; 龙大(洗盘承接) ≈ 京蓝(横盘蓄势)；但<b>涨幅风险</b>：京蓝(+131%)&gt;龙大(+146%? 注龙大145.8%)&gt;发展(+107%)，京蓝/龙大获利盘更重。</li>
+    <li><b>主力行为定性</b>：三只均处于"建仓/推升后洗盘"阶段，<b>未见典型出货（放量滞涨/破位）信号</b>；但高位+ST±10% 波动下，任何催化的反向都易引发急跌。</li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p>📌 数据：腾讯日K接口真实成交数据（已核验 002726=ST龙大、000711=ST京蓝、000838=*ST发展 身份）。资金净流向因沙箱接口全封，采用量价关系推断，非真实净流向金额。</p>
+  <p>🔧 <b>数据校正说明</b>：本次分析初拉 000838 行情时一度误用 <code>sh000838</code> 前缀（返回上证指数串码），经核验项目 `st_monitor.py` 监控池中 000838 实际已正确标注为 <code>"sz"</code>（深市），无需修正；本报告 K线数据均按正确的 <code>sz000838</code> 拉取（现价 2.98，真实个股）。</p>
+  <p>⚠️ <b>免责声明</b>：本报告为基于公开行情的技术分析框架，非证券投资咨询，不构成任何投资建议或买卖要约。ST/*ST 波动剧烈、退市风险极高，所有研判须结合实时行情与公司公告独立判断、自负盈亏。</p>
+  <p>生成：2026-08-24 ｜ 项目：AI_Quant_Trading_Engine · ST反转分析线</p>
+</div>
+
+</div>
+</body>
+</html>

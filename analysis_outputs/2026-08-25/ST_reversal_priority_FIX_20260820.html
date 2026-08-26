@@ -1,0 +1,152 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>ST/*ST反转预期优先级清单(2026-08-20 修正)</title>
+<style>
+:root{--bg:#0f1419;--card:#1a2330;--line:#2a3645;--txt:#e6edf3;--mut:#9fb0c0;--acc:#4ea1ff;--up:#ff5b5b;--down:#26c281;--gold:#ffcf5c}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font-family:-apple-system,'Segoe UI','Microsoft YaHei',sans-serif;line-height:1.6}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 20px 60px}h1{font-size:24px;margin:0 0 4px}
+.sub{color:var(--mut);font-size:13px;margin-bottom:18px}
+.disc{background:#2a1f1f;border:1px solid #5a3a3a;color:#ffd9d9;padding:10px 14px;border-radius:8px;font-size:12.5px;margin-bottom:22px}
+.fix{background:#16301f;border:1px solid #2f6b45;color:#bff5cf;padding:10px 14px;border-radius:8px;font-size:12.5px;margin-bottom:22px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:26px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:center}th{background:#16202c;color:var(--mut);font-weight:600}
+td.l,th.l{text-align:left}.rank{color:var(--gold);font-weight:700;font-size:15px}.up{color:var(--up)}.down{color:var(--down)}
+.tier{margin:22px 0 10px;font-size:16px;font-weight:700;color:var(--acc);border-left:4px solid var(--acc);padding-left:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:14px}
+.card h3{margin:0 0 6px;font-size:16px}.code{color:var(--mut);font-size:12px;font-weight:400;margin-left:8px}
+.scores{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.sc{background:#0e1620;border:1px solid var(--line);border-radius:6px;padding:3px 9px;font-size:11.5px;color:var(--mut)}.sc b{color:var(--txt)}
+.cat,.rk{margin:6px 0;font-size:13.5px}.cat b{color:var(--gold)}.rk b{color:#ff9b9b}
+.anom{color:#ffcf5c;font-size:11.5px}.foot{color:var(--mut);font-size:12px;margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
+.st{display:inline-block;border-radius:5px;padding:1px 7px;font-size:11px;margin-left:6px}
+.stst{background:#3a2a10;border:1px solid #8a6a20;color:#ffcf5c}
+.stx{background:#3a1010;border:1px solid #8a2020;color:#ff8b8b}
+</style></head><body><div class="wrap">
+<h1>ST / *ST 反转预期 · 投资价值优先级清单（修正版）</h1>
+<div class="sub">数据基准：2026-08-20 收盘（腾讯实时行情核验）｜评分模型：五维加权｜修正时间：2026-08-20</div>
+<div class="disc">⚠️ 免责声明：本清单仅基于公开财报、公告与行情数据的<strong>研究性排序与情景讨论</strong>，不构成任何投资建议或要约。ST/*ST 属高风险警示板块，存在退市、业绩变脸、监管处罚等风险，务必严控仓位、独立决策。</div>
+<div class="fix">✅ <b>本次修正：</b>已剔除「ST任子行(300311)」——实时行情名已无 ST 前缀（摘帽完成），不属于"潜力"标的。下表 13 只均为 <b>2026-08-20 实时核验仍带 ST/*ST 前缀</b>的标的；另附已摘帽参照（已移出潜力榜）。</div>
+
+<table><tr><th>优先级</th><th class="l">标的</th><th>当前状态</th><th>现价</th><th>涨跌幅</th><th>换手%</th><th>总市值</th><th>基本面</th><th>市值流动</th><th>重组进度</th><th>扭亏概率</th><th>风险可控</th><th>综合</th></tr>
+<tr><td class="rank">1</td><td class="l"><b>ST长园</b><span class="code">600525</span></td>
+<td><span class="st stst">ST·其他风险警示</span></td>
+<td>5.57</td><td class="up">+2.2%</td><td>5.64</td><td>16.97亿</td>
+<td>5</td><td>4</td><td>5</td><td>4</td><td>4</td><td class="rank">4.5</td></tr>
+<tr><td class="rank">2</td><td class="l"><b>ST宁科</b><span class="code">600165</span></td>
+<td><span class="st stst">ST·其他风险警示</span></td>
+<td>3.23</td><td class="up">+5.9%</td><td>3.36</td><td>40.87亿</td>
+<td>5</td><td>4</td><td>5</td><td>4</td><td>3.5</td><td class="rank">4.425</td></tr>
+<tr><td class="rank">3</td><td class="l"><b>ST华闻</b><span class="code">000793</span></td>
+<td><span class="st stst">ST·其他风险警示</span></td>
+<td>2.15</td><td class="up">+0.47%</td><td>2.16</td><td>9.3亿</td>
+<td>5</td><td>3</td><td>5</td><td>4</td><td>3.5</td><td class="rank">4.275</td></tr>
+<tr><td class="rank">4</td><td class="l"><b>*ST京化</b><span class="code">600889</span></td>
+<td><span class="st stx">*ST·退市风险警示</span></td>
+<td>13.4</td><td class="up">+0.75%</td><td>13.63</td><td>2.03亿<span class="anom">*</span></td>
+<td>5</td><td>3</td><td>5</td><td>4</td><td>3.5</td><td class="rank">4.275</td></tr>
+<tr><td class="rank">5</td><td class="l"><b>ST中装</b><span class="code">002822</span></td>
+<td><span class="st stst">ST·其他风险警示</span></td>
+<td>3.19</td><td class="up">+1.59%</td><td>3.19</td><td>6.58亿</td>
+<td>5</td><td>3</td><td>5</td><td>4</td><td>3</td><td class="rank">4.2</td></tr>
+<tr><td class="rank">6</td><td class="l"><b>ST天际</b><span class="code">002759</span></td>
+<td><span class="st stst">ST·其他风险警示</span></td>
+<td>17.62</td><td class="up">+0.46%</td><td>17.85</td><td>18.93亿</td>
+<td>4</td><td>5</td><td>3</td><td>5</td><td>4.5</td><td class="rank">4.175</td></tr>
+<tr><td class="rank">7</td><td class="l"><b>ST万邦</b><span class="code">002082</span></td>
+<td><span class="st stst">ST·其他风险警示</span></td>
+<td>9.97</td><td class="up">+2.26%</td><td>10.15</td><td>9.19亿</td>
+<td>4</td><td>4</td><td>3</td><td>5</td><td>4</td><td class="rank">3.95</td></tr>
+<tr><td class="rank">8</td><td class="l"><b>ST东尼</b><span class="code">603595</span></td>
+<td><span class="st stst">ST·其他风险警示</span></td>
+<td>26.0</td><td class="down">-0.69%</td><td>26.8</td><td>1.87亿<span class="anom">*</span></td>
+<td>4</td><td>3</td><td>3</td><td>4</td><td>4</td><td class="rank">3.6</td></tr>
+<tr><td class="rank">9</td><td class="l"><b>ST西王</b><span class="code">000639</span></td>
+<td><span class="st stst">ST·其他风险警示</span></td>
+<td>1.87</td><td class="up">+6.25%</td><td>1.94</td><td>112.17亿</td>
+<td>4</td><td>3</td><td>3</td><td>4</td><td>3.5</td><td class="rank">3.525</td></tr>
+<tr><td class="rank">10</td><td class="l"><b>ST京蓝</b><span class="code">000711</span></td>
+<td><span class="st stst">ST·其他风险警示</span></td>
+<td>6.11</td><td class="down">-0.33%</td><td>6.18</td><td>105.82亿</td>
+<td>4</td><td>3</td><td>3</td><td>4</td><td>3.5</td><td class="rank">3.525</td></tr>
+<tr><td class="rank">11</td><td class="l"><b>ST嘉澳</b><span class="code">603822</span></td>
+<td><span class="st stst">ST·其他风险警示</span></td>
+<td>57.76</td><td class="up">+3.79%</td><td>59.32</td><td>0.65亿<span class="anom">*</span></td>
+<td>4</td><td>3</td><td>3</td><td>4</td><td>3.5</td><td class="rank">3.525</td></tr>
+<tr><td class="rank">12</td><td class="l"><b>ST中珠</b><span class="code">600568</span></td>
+<td><span class="st stst">ST·其他风险警示</span></td>
+<td>2.21</td><td class="up">+0.45%</td><td>2.22</td><td>7.15亿</td>
+<td>3</td><td>3</td><td>4</td><td>3</td><td>3.5</td><td class="rank">3.325</td></tr>
+<tr><td class="rank">13</td><td class="l"><b>*ST南置</b><span class="code">002305</span></td>
+<td><span class="st stx">*ST·退市风险警示</span></td>
+<td>2.11</td><td class="up">+2.43%</td><td>2.11</td><td>17.7亿</td>
+<td>3</td><td>3</td><td>4</td><td>3</td><td>3</td><td class="rank">3.25</td></tr>
+</table>
+<div class="anom">* 市值字段在行情源显示异常（流通&gt;总或显著偏离板块常态），已标注待复核，评分中流动性维度按审慎处理。</div>
+<div class="tier">【P1 高确定性 · 近期催化（摘帽申请/重整执行完毕）】</div>
+<div class="card"><h3>ST长园<span class="code">600525｜现价 5.57（+2.2%）｜总市值 16.97亿｜换手 5.64%</span><span class="st stst">ST·其他风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>5</b></span><span class="sc">市值流动 <b>4</b></span><span class="sc">重组进度 <b>5</b></span><span class="sc">扭亏概率 <b>4</b></span><span class="sc">风险可控 <b>4</b></span><span class="sc">综合 <b>4.5</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：已申请撤销其他风险警示(8/14)</div>
+<div class="cat"><b>核心催化逻辑：</b>①8/14董事会审议通过申请撤销ST，依据内控否定意见情形已消除；②智能电网设备主业稳健，中报预盈3500-5200万；③审核进度明确。</div><div class="rk"><b>主要风险：</b>①撤销ST尚需上交所审核，结果存不确定性；②历史内控问题需持续观察整改实效。</div></div>
+<div class="card"><h3>ST宁科<span class="code">600165｜现价 3.23（+5.9%）｜总市值 40.87亿｜换手 3.36%</span><span class="st stst">ST·其他风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>5</b></span><span class="sc">市值流动 <b>4</b></span><span class="sc">重组进度 <b>5</b></span><span class="sc">扭亏概率 <b>4</b></span><span class="sc">风险可控 <b>3.5</b></span><span class="sc">综合 <b>4.425</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：已申请撤销其他风险警示(8/14)</div>
+<div class="cat"><b>核心催化逻辑：</b>①8/14已提交撤销ST申请，交易所15个交易日内裁定；②重整计划执行完毕、行政处罚满12个月、追溯重述完成；③国资背景，持续经营不确定性消除。</div><div class="rk"><b>主要风险：</b>①上交所审核存在被驳回/延期可能；②曾因信披被处罚，历史合规瑕疵；③若审核不通过仍为ST。</div></div>
+<div class="card"><h3>ST华闻<span class="code">000793｜现价 2.15（+0.47%）｜总市值 9.3亿｜换手 2.16%</span><span class="st stst">ST·其他风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>5</b></span><span class="sc">市值流动 <b>3</b></span><span class="sc">重组进度 <b>5</b></span><span class="sc">扭亏概率 <b>4</b></span><span class="sc">风险可控 <b>3.5</b></span><span class="sc">综合 <b>4.275</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：重整计划执行完毕(2026/6/30)</div>
+<div class="cat"><b>核心催化逻辑：</b>①2026/6/30重整计划执行完毕，海南国资入主；②中报预盈4700-6000万(含约1亿重整收益)；③摘帽路径清晰。</div><div class="rk"><b>主要风险：</b>①曾为*ST、信披违规遗留风险；②盈利含非经常性重整收益，主业持续性待验；③股价低、波动大。</div></div>
+<div class="card"><h3>*ST京化<span class="code">600889｜现价 13.4（+0.75%）｜总市值 2.03亿<span class="anom">*</span>｜换手 13.63%</span><span class="st stx">*ST·退市风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>5</b></span><span class="sc">市值流动 <b>3</b></span><span class="sc">重组进度 <b>5</b></span><span class="sc">扭亏概率 <b>4</b></span><span class="sc">风险可控 <b>3.5</b></span><span class="sc">综合 <b>4.275</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：重大资产重组完成，市值字段异常待复核</div>
+<div class="cat"><b>核心催化逻辑：</b>①重大资产重组完成，置入高端装备制造资产；②中报预盈4000-4800万，同比扭亏；③主营彻底转型，基本面根本改善。</div><div class="rk"><b>主要风险：</b>①仍为*ST，退市风险警示未完全解除；②转型后整合与订单兑现需跟踪；③市值数据异常需复核。</div></div>
+<div class="card"><h3>ST中装<span class="code">002822｜现价 3.19（+1.59%）｜总市值 6.58亿｜换手 3.19%</span><span class="st stst">ST·其他风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>5</b></span><span class="sc">市值流动 <b>3</b></span><span class="sc">重组进度 <b>5</b></span><span class="sc">扭亏概率 <b>4</b></span><span class="sc">风险可控 <b>3</b></span><span class="sc">综合 <b>4.2</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：破产重整全部完成，已提交摘帽申请</div>
+<div class="cat"><b>核心催化逻辑：</b>①破产重整全部完成并已提交摘帽申请；②转型环保物业主业，营收规模充足；③困境反转逻辑明确。</div><div class="rk"><b>主要风险：</b>①曾因年报财务造假被处罚、主要账户曾被冻结；②仍背负其他风险警示，摘帽审核存变数；③低市值、流动性一般。</div></div>
+<div class="tier">【P2 中高确定性 · 基本面反转/扭亏兑现】</div>
+<div class="card"><h3>ST天际<span class="code">002759｜现价 17.62（+0.46%）｜总市值 18.93亿｜换手 17.85%</span><span class="st stst">ST·其他风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>4</b></span><span class="sc">市值流动 <b>5</b></span><span class="sc">重组进度 <b>3</b></span><span class="sc">扭亏概率 <b>5</b></span><span class="sc">风险可控 <b>4.5</b></span><span class="sc">综合 <b>4.175</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：中报预盈2.2-2.6亿(六氟磷酸锂回暖)</div>
+<div class="cat"><b>核心催化逻辑：</b>①中报预盈2.2-2.6亿，居ST板块预盈榜首；②核心产品六氟磷酸锂盈利能力回升；③流动性好(换手17.85%)。</div><div class="rk"><b>主要风险：</b>①锂电周期波动大，盈利随产品价格起伏；②若锂价回落预盈或不及预期；③摘帽需满足净资产/营收等硬条件。</div></div>
+<div class="card"><h3>ST万邦<span class="code">002082｜现价 9.97（+2.26%）｜总市值 9.19亿｜换手 10.15%</span><span class="st stst">ST·其他风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>4</b></span><span class="sc">市值流动 <b>4</b></span><span class="sc">重组进度 <b>3</b></span><span class="sc">扭亏概率 <b>5</b></span><span class="sc">风险可控 <b>4</b></span><span class="sc">综合 <b>3.95</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：中报预盈6500-9000万，同比+380%~568%</div>
+<div class="cat"><b>核心催化逻辑：</b>①中报预盈6500-9000万，同比增长超380%；②创新药合作驱动；③主业改善+流动性尚可。</div><div class="rk"><b>主要风险：</b>①高增长部分来自合作/非经常性因素，可持续性待验；②小市值、股价弹性与回撤均大。</div></div>
+<div class="tier">【P3 中报扭亏 · 主业改善，待摘帽条件验证】</div>
+<div class="card"><h3>ST东尼<span class="code">603595｜现价 26.0（-0.69%）｜总市值 1.87亿<span class="anom">*</span>｜换手 26.8%</span><span class="st stst">ST·其他风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>4</b></span><span class="sc">市值流动 <b>3</b></span><span class="sc">重组进度 <b>3</b></span><span class="sc">扭亏概率 <b>4</b></span><span class="sc">风险可控 <b>4</b></span><span class="sc">综合 <b>3.6</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：摘帽预期，市值字段异常待复核</div>
+<div class="cat"><b>核心催化逻辑：</b>①摘帽条件充分(净利润/净资产转正)；②消费电子景气修复；③高换手显示资金关注度高。</div><div class="rk"><b>主要风险：</b>①市值字段异常需复核，或低流通盘、滑点风险；②摘帽申请或被驳回/延期；③消费电子需求波动。</div></div>
+<div class="card"><h3>ST西王<span class="code">000639｜现价 1.87（+6.25%）｜总市值 112.17亿｜换手 1.94%</span><span class="st stst">ST·其他风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>4</b></span><span class="sc">市值流动 <b>3</b></span><span class="sc">重组进度 <b>3</b></span><span class="sc">扭亏概率 <b>4</b></span><span class="sc">风险可控 <b>3.5</b></span><span class="sc">综合 <b>3.525</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：中报预盈2.0-2.5亿(处置Iovate资产)</div>
+<div class="cat"><b>核心催化逻辑：</b>①中报预盈2.0-2.5亿；②处置Iovate资产获约3.5亿投资收益；③低价股、市值大。</div><div class="rk"><b>主要风险：</b>①盈利主要靠资产处置非经常性收益，主业改善有限；②此前债务危机遗留；③大市值、弹性偏低。</div></div>
+<div class="card"><h3>ST京蓝<span class="code">000711｜现价 6.11（-0.33%）｜总市值 105.82亿｜换手 6.18%</span><span class="st stst">ST·其他风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>4</b></span><span class="sc">市值流动 <b>3</b></span><span class="sc">重组进度 <b>3</b></span><span class="sc">扭亏概率 <b>4</b></span><span class="sc">风险可控 <b>3.5</b></span><span class="sc">综合 <b>3.525</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：中报预盈6800-8300万，转型铟/ITO靶材</div>
+<div class="cat"><b>核心催化逻辑：</b>①中报预盈6800-8300万(含子公司处置股票7600万非经常性收益)；②更名铟靶新材，切入稀缺新材料赛道；③三季度摘帽潜力。</div><div class="rk"><b>主要风险：</b>①盈利含非经常性收益；②历史问题待彻底出清；③转型新业务兑现存不确定性。</div></div>
+<div class="card"><h3>ST嘉澳<span class="code">603822｜现价 57.76（+3.79%）｜总市值 0.65亿<span class="anom">*</span>｜换手 59.32%</span><span class="st stst">ST·其他风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>4</b></span><span class="sc">市值流动 <b>3</b></span><span class="sc">重组进度 <b>3</b></span><span class="sc">扭亏概率 <b>4</b></span><span class="sc">风险可控 <b>3.5</b></span><span class="sc">综合 <b>3.525</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：中报预盈6000-9000万(生物航煤)，市值异常待复核</div>
+<div class="cat"><b>核心催化逻辑：</b>①中报预盈6000-9000万，生物航煤行情向好、订单充足；②扭亏确定性高；③超高换手显示强资金博弈。</div><div class="rk"><b>主要风险：</b>①市值字段异常(显示<1亿)需复核，或极低流通盘、滑点/操纵风险极高；②过高换手蕴含剧烈波动；③ST标签未除。</div></div>
+<div class="card"><h3>ST中珠<span class="code">600568｜现价 2.21（+0.45%）｜总市值 7.15亿｜换手 2.22%</span><span class="st stst">ST·其他风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>3</b></span><span class="sc">市值流动 <b>3</b></span><span class="sc">重组进度 <b>4</b></span><span class="sc">扭亏概率 <b>3</b></span><span class="sc">风险可控 <b>3.5</b></span><span class="sc">综合 <b>3.325</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：债务重组落地，2025年业绩盈利</div>
+<div class="cat"><b>核心催化逻辑：</b>①2025年度业绩盈利，债务重组落地，财务隐患基本化解；②摘帽条件基本满足；③新规催化估值修复预期。</div><div class="rk"><b>主要风险：</b>①改善更多来自债务/资产端，主业内生增长待验；②低换手、流动性一般；③仍需持续观察。</div></div>
+<div class="tier">【P4 进展中 · 需持续跟踪】</div>
+<div class="card"><h3>*ST南置<span class="code">002305｜现价 2.11（+2.43%）｜总市值 17.7亿｜换手 2.11%</span><span class="st stx">*ST·退市风险警示</span></h3>
+<div class="scores"><span class="sc">基本面 <b>3</b></span><span class="sc">市值流动 <b>3</b></span><span class="sc">重组进度 <b>4</b></span><span class="sc">扭亏概率 <b>3</b></span><span class="sc">风险可控 <b>3</b></span><span class="sc">综合 <b>3.25</b></span></div>
+<div style="color:var(--mut);font-size:12px;margin:2px 0 8px">状态：控股股东启动重大资产剥离(避免退市)</div>
+<div class="cat"><b>核心催化逻辑：</b>①控股股东中国电建地产启动重大资产重组，拟剥离地产相关资产及负债；②交易完成后净资产有望转正、避免退市；③重组处实质推进阶段。</div><div class="rk"><b>主要风险：</b>①仍为*ST，退市风险未解除；②资产剥离交易尚需审批，存在终止可能；③地产资产估值与接盘方不确定；④低换手。</div></div>
+<div class="tier">【已摘帽 / 更名 · 反转已兑现（已移出潜力榜，仅作参照）】</div>
+<table><tr><th class="l">标的</th><th>现价</th><th class="l">说明</th></tr>
+<tr><td class="l"><b>任子行</b><span class="code">300311</span></td><td>6.11</td><td class="l">摘帽完成(实时名已无ST前缀)，反转已兑现——原P1已移除</td></tr>
+<tr><td class="l"><b>松发股份</b><span class="code">603268</span></td><td>176.21</td><td class="l">恒力重工100%股权置入，已申请摘帽</td></tr>
+<tr><td class="l"><b>石药景峰</b><span class="code">000908</span></td><td>7.0</td><td class="l">石药控股入主，重整完成，转型创新药平台</td></tr>
+<tr><td class="l"><b>东易日盛</b><span class="code">002713</span></td><td>9.45</td><td class="l">重整完成，北京华著科技入主，注入算力订单</td></tr>
+<tr><td class="l"><b>宇顺电子</b><span class="code">002289</span></td><td>41.5</td><td class="l">现金收购数据中心资产，转型算力</td></tr>
+<tr><td class="l"><b>国旅联合</b><span class="code">600358</span></td><td>5.07</td><td class="l">润田实业100%股权注入，恢复审核</td></tr>
+<tr><td class="l"><b>顺景科技</b><span class="code">603007</span></td><td>4.59</td><td class="l">原ST花王重整完成，转型新能源/半导体</td></tr>
+</table>
+<div class="foot"><b>方法论：</b>五维加权评分（各维度1-5分）：基本面改善确定性(25%)＋市值与流动性(15%)＋重组进度(25%)＋业绩预告扭亏概率(20%)＋风险可控性(15%)。
+<b>ST状态核验：</b>以腾讯 qt.gtimg.cn 实时显示名为准（带 ST/*ST 前缀即当前仍被实施风险警示），核验时间 2026-08-20。
+<b>数据来源：</b>行情/市值来自腾讯；催化与风险依据证券时报·数据宝、东方财富、同花顺、雪球公开公告梳理。
+<b>重要提示：</b>摘帽审核结果、重组审批、市值异常项均存在不确定性，请以交易所与上市公司最新公告为准。</div></div></body></html>

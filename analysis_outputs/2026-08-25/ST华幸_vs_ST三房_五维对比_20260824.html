@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>*ST华幸 vs *ST三房 五维对比分析 · 2026-08-24</title>
+<style>
+  :root{--bg:#0f1115;--card:#171a21;--card2:#1d212b;--line:#2a2f3a;--txt:#e6e9ef;--sub:#9aa3b2;--red:#ff5b5b;--green:#3fd07f;--blue:#5aa9ff;--amber:#ffb347;--purple:#b88bff;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.65;}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 60px;}
+  h1{font-size:25px;margin:0 0 6px;}
+  h2{font-size:19px;margin:34px 0 12px;padding-left:10px;border-left:4px solid var(--blue);}
+  h3{font-size:15px;margin:18px 0 8px;color:var(--sub);}
+  .meta{color:var(--sub);font-size:13px;margin-bottom:8px;}
+  .step{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0;}
+  .step .tag{display:inline-block;font-size:12px;color:#0b0d11;background:var(--blue);border-radius:6px;padding:2px 9px;font-weight:700;margin-bottom:8px;}
+  .brief li{margin:4px 0;}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13.5px;}
+  th,td{border:1px solid var(--line);padding:9px 10px;vertical-align:top;text-align:left;}
+  th{background:var(--card2);color:var(--txt);font-weight:700;}
+  td{background:var(--card);}
+  .c1{color:var(--amber);font-weight:700;}
+  .c2{color:var(--purple);font-weight:700;}
+  .neg{color:var(--red);}
+  .pos{color:var(--green);}
+  .warn{background:rgba(255,179,71,.10);border:1px solid rgba(255,179,71,.4);border-radius:10px;padding:12px 14px;margin:12px 0;color:#ffd9a0;font-size:13.5px;}
+  .dim{color:var(--sub);font-size:12.5px;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr;}}
+  .box{border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--card);}
+  .box h4{margin:0 0 8px;font-size:14.5px;}
+  .hl{color:var(--amber);}
+  ul.tight{margin:6px 0;padding-left:18px;}
+  ul.tight li{margin:3px 0;}
+  .pill{display:inline-block;font-size:11.5px;padding:1px 7px;border-radius:5px;margin:1px 2px;}
+  .pill.star{background:rgba(255,91,91,.18);color:var(--red);}
+  .pill.oth{background:rgba(255,179,71,.18);color:var(--amber);}
+  .footer{margin-top:30px;color:var(--sub);font-size:12px;border-top:1px solid var(--line);padding-top:14px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>*ST华幸（600340） vs *ST三房（600370）<br>全面对比分析 · 五维结构化</h1>
+<div class="meta">分析日期：2026-08-24 ｜ 数据源：腾讯行情快照（实时核验）+ 巨潮资讯/上证报/证券时报/界面/同花顺等公开披露 ｜ 工作流：agency-operating-model（提示词工程师→项目经理→编排者→域研究员→现实检验者）</div>
+
+<!-- ============ STEP 1 ============ -->
+<div class="step">
+  <span class="tag">STEP 1 · 提示词工程师 OPTIMIZED_BRIEF</span>
+  <h3>分析目标与范围</h3>
+  <ul class="brief">
+    <li><b>目标</b>：对华幸（600340，华夏幸福）与三房（600370，江苏三房巷聚材）两只*ST标的做<b>同框可比分析</b>，识别二者在保壳逻辑、确定性、风险结构上的本质差异，辅助判断"谁离摘星/摘帽更近"。</li>
+    <li><b>范围（五维）</b>：①业务结构 ②运营状况 ③财务表现 ④市场定位 ⑤潜在风险。并单列"戴帽原因与摘星/摘帽路径"作为对比轴心。</li>
+    <li><b>约束</b>：所有价格/状态须实时核验；结论仅基于公开披露；非投资建议，附免责声明。</li>
+    <li><b>交付物</b>：本 HTML 结构化对比报告 + 文末结论。</li>
+  </ul>
+</div>
+
+<!-- ============ STEP 2 ============ -->
+<div class="step">
+  <span class="tag">STEP 2 · 项目经理 TASK_BOARD</span>
+  <h3>任务拆解与指派</h3>
+  <table>
+    <tr><th style="width:34%">任务</th><th style="width:22%">负责角色</th><th>完成定义(DoD)</th></tr>
+    <tr><td>实时行情+市值+风险状态核验</td><td>engineering-data-engineer</td><td>腾讯快照两只票现价/市值/涨跌停，标注主板*ST新规±10%</td></tr>
+    <tr><td>2025年报/2026Q1 财务事实</td><td>engineering-data-engineer</td><td>营收、归母净利、净资产、负债率、审计意见四要件</td></tr>
+    <tr><td>戴帽原因+重整/摘帽公告里程碑</td><td>marketing-news-briefing</td><td>按时间排序关键公告与监管状态</td></tr>
+    <tr><td>五维双面对比+可比结论</td><td>finance-investment-researcher</td><td>每维华幸vs三房，给出差异定性</td></tr>
+    <tr><td>事实质检(夸大/矛盾/缺口)</td><td>testing-reality-checker</td><td>对照披露核验，列证据缺口</td></tr>
+    <tr><td>终稿合成+免责声明</td><td>agents-orchestrator</td><td>FINAL_DELIVERABLE 落盘</td></tr>
+  </table>
+</div>
+
+<!-- ============ STEP 3-4 DATA_FACTS ============ -->
+<div class="step">
+  <span class="tag">STEP 3-4 · 数据/事实层 + 新闻层</span>
+  <h3>实时行情与公开披露事实（已核验）</h3>
+  <table>
+    <tr><th>项目</th><th class="c1">*ST华幸 600340</th><th class="c2">*ST三房 600370</th></tr>
+    <tr><td>公司全称</td><td>华夏幸福基业股份有限公司</td><td>江苏三房巷聚材股份有限公司</td></tr>
+    <tr><td>实时价(08-24)</td><td>1.09 元</td><td>1.47 元</td></tr>
+    <tr><td>总市值(亿)</td><td>42.44</td><td>59.13</td></tr>
+    <tr><td>主板*ST涨跌停(新规±10%)</td><td>涨停1.20 / 跌停0.98</td><td>涨停1.65 / 跌停1.35</td></tr>
+    <tr><td>戴帽日</td><td>2026-05-06（复牌）</td><td>2026-04-30（复牌）</td></tr>
+    <tr><td>戴帽主因(*ST)</td><td>2025末归母净资产为负(-177.43亿)，触9.3.2(二)</td><td>2025财报<b>无法表示意见</b>，触9.3.2(三)</td></tr>
+    <tr><td>叠加ST主因</td><td>连续3年扣非负+持续经营不确定，9.8.1(六)</td><td>2025内控<b>否定意见</b>，9.8.1(三)</td></tr>
+    <tr><td>2025营收</td><td class="neg">86.03亿(-63.80%)</td><td>198.77亿(-17.65%)</td></tr>
+    <tr><td>2025归母净利</td><td class="neg">-228.59亿</td><td class="neg">-8.85亿（亏幅扩大）</td></tr>
+    <tr><td>2025归母净资产</td><td class="neg">-177.43亿（资不抵债）</td><td>48.25亿(-15.50%)</td></tr>
+    <tr><td>资产负债率</td><td class="neg">101.89%（>100%）</td><td>72.27%</td></tr>
+    <tr><td>审计意见(财报/内控)</td><td>保留带解释性说明 / 无保留</td><td class="neg">无法表示意见 / 否定意见（最严重）</td></tr>
+    <tr><td>2026Q1归母净利</td><td class="neg">-17.01亿（减亏）</td><td class="pos">+3274万（扭亏，扣非仍-2291万）</td></tr>
+  </table>
+  <div class="warn">⚠️ 行情注记：腾讯快照 high/low 字段本次返回异常（华幸 143554/47488、三房 76020/22800，明显为脏数据），已弃用，仅采纳现价与总市值（均与公开行情一致）。涨跌停按 2026-07-06 新规主板*ST=±10% 计算。</div>
+</div>
+
+<!-- ============ STEP 5 RESEARCH ============ -->
+<div class="step">
+  <span class="tag">STEP 5 · 研究员 RESEARCH_MEMO（五维对比）</span>
+
+  <h3>① 业务结构</h3>
+  <div class="grid2">
+    <div class="box"><h4 class="c1">华幸 · 产业新城运营商</h4><ul class="tight">
+      <li>四大板块：开发业务、运营业务、服务业务、园区衍生业务</li>
+      <li>起家环京地产，曾千亿销售阵营；现房地产结转锐减</li>
+      <li>员工8444人，参控股778家，重资产+高负债底色</li>
+    </ul></div>
+    <div class="box"><h4 class="c2">三房 · 聚酯龙头</h4><ul class="tight">
+      <li>PTA-瓶级聚酯切片一体化，PTA产能占国内约15%</li>
+      <li>瓶级聚酯切片产能全国前列，制造业属性</li>
+      <li>重化工周期品，盈利随行业景气/反内卷政策波动</li>
+    </ul></div>
+  </div>
+
+  <h3>② 运营状况</h3>
+  <div class="grid2">
+    <div class="box"><h4 class="c1">华幸</h4><ul class="tight">
+      <li>已完住宅交付，剩4个公寓项目(5161套/29万㎡)收尾</li>
+      <li>环京产业园招商：新增170个签约项目，固安创新中心出租率69%</li>
+      <li>核心动作：推进<b>预重整</b>（已中选投资人）</li>
+    </ul></div>
+    <div class="box"><h4 class="c2">三房</h4><ul class="tight">
+      <li>主业稳定生产，2026Q1营收49.9亿、归母净利扭亏</li>
+      <li>无重整，靠经营改善+内控整改自救</li>
+      <li>隐患：控股股东100%质押冻结、债务逾期、关联应收款清收</li>
+    </ul></div>
+  </div>
+
+  <h3>③ 财务表现（见上表，差异轴心）</h3>
+  <ul class="tight">
+    <li><b>华幸致命伤</b>：归母净资产 <b>-177.43亿</b>、负债率 <b>101.89%</b> —— 资不抵债，保壳必须靠"外部输血"（重整转增/债务豁免）把净资产做正。</li>
+    <li><b>三房致命伤</b>：净资产仍正（48.25亿）、营收规模大（198.77亿），但<b>审计意见最严重</b>（无法表示+内控否定）——保壳必须"扫除审计障碍"。</li>
+    <li>二者净利均亏，但三房2026Q1已扭亏（行业景气回升），华幸仍深亏但减亏。</li>
+  </ul>
+
+  <h3>④ 市场定位与保壳路径</h3>
+  <div class="grid2">
+    <div class="box"><h4 class="c1">华幸 · 重整驱动型</h4><ul class="tight">
+      <li>定位：原千亿房企困境反转，确定性来自<b>重整抓手</b></li>
+      <li>进度：2025-11预重整受理 → 2026-06中选投资人（杭州骋风而来+南阳木兰花置业联合体）→ 2026-08管理层增持完毕</li>
+      <li>摘星路径：重整执行→净资产转正+消除持续经营不确定+标准无保留</li>
+    </ul></div>
+    <div class="box"><h4 class="c2">三房 · 整改驱动型</h4><ul class="tight">
+      <li>定位：老牌聚酯龙头，受益反内卷+行业景气回升</li>
+      <li>进度：<b>无重整</b>；2026-07-31进展公告列措施（应收清收/关联担保化解/内控自查）</li>
+      <li>摘星路径：解决审计无法表示事项+内控整改达标+标准无保留</li>
+    </ul></div>
+  </div>
+
+  <h3>⑤ 潜在风险</h3>
+  <table>
+    <tr><th style="width:22%">风险类型</th><th class="c1">华幸</th><th class="c2">三房</th></tr>
+    <tr><td>退市触发点</td><td>2026净资产仍负→终止上市</td><td>2026仍无法表示/否定意见→终止上市</td></tr>
+    <tr><td>债权/债务</td><td>存续债14只285.53亿(5只违约)、离岸债96亿美元</td><td>逾期债约5.06亿(占净资产10.48%)；三房转债(110092)承压，评级A-负面</td></tr>
+    <tr><td>控制权</td><td>实控人王文学稳固(15.06%)</td><td class="neg">控股股东100%冻结，4.39亿股(10.92%)将司法拍卖，或变更</td></tr>
+    <tr><td>审计硬伤</td><td>较轻(保留带说明+内控无保留)</td><td class="neg">最重(无法表示+否定)</td></tr>
+    <tr><td>面值退市</td><td>曾逼1元(现价1.09)</td><td>曾逼1元(5月22日1.31)</td></tr>
+    <tr><td>特殊博弈</td><td>第一大股东/债权人中国平安已对簿公堂</td><td>关联应收款35.61亿(坏账仅计提1.07亿)可回收性存疑</td></tr>
+  </table>
+</div>
+
+<!-- ============ STEP 6 REALITY CHECK ============ -->
+<div class="step">
+  <span class="tag">STEP 6 · 现实检验者 REALITY_CHECK</span>
+  <ul class="tight">
+    <li>✅ 行情：现价(华幸1.09/三房1.47)、市值(42.44/59.13亿)与公开行情一致；涨跌停按2026-07-06新规±10%计算正确。</li>
+    <li>✅ 戴帽原因：华幸净资产为负(9.3.2二)、三房审计无法表示(9.3.2三)均与上交所有关规则及公告吻合。</li>
+    <li>✅ 财务：2025营收/净利/净资产/负债率/审计意见四要件，与巨潮/上证报/证券时报披露一致。</li>
+    <li>⚠️ 证据缺口：华幸"保留带解释性说明"审计意见取自结构化财务表；stcn报道表述为"持续经营重大不确定性段落"，二者口径接近（保留/带强调事项），非标准无保留，已按此定性。</li>
+    <li>⚠️ 证据缺口：华幸中选投资人"杭州骋风而来+南阳木兰花置业"为财联社6-11报道，正式投资协议是否签署未见最新公告，重整仍处"中选→磋商"阶段，确定性低于"已执行"。</li>
+    <li>⚠️ 证据缺口：三房2026年报能否"过关"（审计意见改善）尚无公开信号，依赖内控整改与关联应收款回收进展，需持续跟踪进展公告(2026-084系列)。</li>
+    <li>✅ 无夸大：未对任一方给出"确定摘星/摘帽"结论；均标注"2026年报定生死"及对应硬条件。</li>
+  </ul>
+</div>
+
+<!-- ============ STEP 7 FINAL ============ -->
+<div class="step">
+  <span class="tag">STEP 7 · 编排者 FINAL_DELIVERABLE</span>
+  <h3>结论：谁离摘星/摘帽更近？</h3>
+  <div class="box" style="border-color:var(--amber)">
+    <p><b>本质差异一句话</b>：华幸是"<b>财务类-净资产</b>"戴帽（靠重整输血），三房是"<b>审计意见类</b>"戴帽（靠扫除审计障碍）。</p>
+    <ul class="tight">
+      <li><span class="c1">华幸</span>：死穴是<b>资不抵债(-177亿)</b>，但<b>重整抓手清晰、确定性更高</b>（预重整已受理、中选投资人已定、管理层增持完毕）。若2026年内重整计划执行、资本公积转增/债务豁免落地使净资产转正，则摘星路径最通顺；最大不确定性在<b>重整执行节奏+平安博弈+时间窗</b>。</li>
+      <li><span class="c2">三房</span>：死穴是<b>审计无法表示+内控否定（最严重硬伤）</b>，但<b>净资产为正、营收规模大、2026Q1已扭亏、行业景气回升</b>。全靠经营改善+内控整改，<b>无重整兜底</b>；关联应收款35.61亿能否回收是审计"过关"的关键，控股股东冻结拍卖悬顶。审计障碍比华幸的净资产障碍<b>更棘手、更不可控</b>。</li>
+    </ul>
+    <p class="hl">综合研判（研究框架，非投资建议）：从"保壳确定性"看，<b>华幸因有重整抓手略占优</b>；从"基本面底盘"看，<b>三房净资产/营收更扎实、已现扭亏</b>。二者风险结构不同，不可简单比价——华幸赌"重整落地"、三房赌"审计过关+内控整改"。均需盯2026年报这一共同生死节点。</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>📌 数据来源：腾讯行情快照(qt.gtimg.cn)实时核验；财务与公告来自巨潮资讯、上证报、中国证券报、证券时报、界面新闻、同花顺等公开披露，经多源交叉。</p>
+  <p>⚠️ <b>免责声明</b>：本报告为程序化整理的研究框架，非证券投资咨询，不构成任何投资建议或买卖要约。ST/*ST 股票退市风险极高，所有"摘星/摘帽/重整"结论须以交易所及公司正式公告为准，请独立判断、自负盈亏。</p>
+  <p>生成：2026-08-24 ｜ 项目：AI_Quant_Trading_Engine · ST反转分析线</p>
+</div>
+
+</div>
+</body>
+</html>

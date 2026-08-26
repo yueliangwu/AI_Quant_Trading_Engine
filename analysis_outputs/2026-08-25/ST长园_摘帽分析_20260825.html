@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ST长园(600525) 摘帽分析 · 工作流结构化报告 2026-08-25</title>
+<style>
+  :root{
+    --bg:#0f1115; --card:#171a21; --line:#262b36; --txt:#e8eaed; --sub:#9aa3b2;
+    --red:#ff4d4f; --green:#00c853; --amber:#ffb020; --blue:#4d9bff; --purple:#b07cff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.65;padding:28px;max-width:1100px;margin:0 auto}
+  h1{font-size:26px;margin-bottom:6px}
+  h2{font-size:19px;margin:26px 0 12px;padding-left:10px;border-left:4px solid var(--blue)}
+  h3{font-size:15px;margin:16px 0 8px;color:var(--sub)}
+  .sub{color:var(--sub);font-size:13px;margin-bottom:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .kpi{background:#1e222c;border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .kpi .k{font-size:12px;color:var(--sub)}
+  .kpi .v{font-size:20px;font-weight:700;margin-top:4px}
+  .red{color:var(--red)} .green{color:var(--green)} .amber{color:var(--amber)} .blue{color:var(--blue)} .purple{color:var(--purple)}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#1e222c;color:var(--sub);font-weight:600}
+  tr:nth-child(even){background:#14171e}
+  .tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:12px;font-weight:600;margin:2px 0}
+  .tag-ok{background:rgba(0,200,83,.15);color:var(--green)}
+  .tag-warn{background:rgba(255,176,32,.15);color:var(--amber)}
+  .tag-bad{background:rgba(255,77,79,.15);color:var(--red)}
+  .tag-info{background:rgba(77,155,255,.15);color:var(--blue)}
+  .timeline{position:relative;padding-left:22px}
+  .timeline::before{content:"";position:absolute;left:6px;top:4px;bottom:4px;width:2px;background:var(--line)}
+  .tl{position:relative;margin:10px 0}
+  .tl::before{content:"";position:absolute;left:-19px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--blue);border:2px solid var(--bg)}
+  .tl .d{font-size:12px;color:var(--sub)}
+  .box{background:#1e222c;border-left:3px solid var(--amber);padding:12px 14px;border-radius:0 8px 8px 0;margin:10px 0;font-size:13.5px}
+  .box-blue{border-left-color:var(--blue)}
+  .box-red{border-left-color:var(--red)}
+  code{background:#0c0e12;padding:2px 6px;border-radius:5px;font-size:12px;color:var(--purple)}
+  .foot{margin-top:24px;font-size:12px;color:var(--sub);border-top:1px solid var(--line);padding-top:14px}
+  .wf{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+  .wf span{background:#1e222c;border:1px solid var(--line);border-radius:20px;padding:5px 12px;font-size:12px}
+  .wf span b{color:var(--blue)}
+</style>
+</head>
+<body>
+<h1>ST长园(600525) 摘帽分析 · 工作流结构化报告</h1>
+<div class="sub">生成日期 2026-08-25 ｜ 数据源：腾讯行情快照 + 巨潮资讯/上交所/中证报/上证报/证券时报公开披露（WebSearch 交叉核验）｜ 本报告为程序化研究框架，<b class="red">非投资建议</b></div>
+
+<div class="wf">
+  <span><b>①提示词工程师</b> 定目标</span>
+  <span><b>②项目经理</b> 拆任务</span>
+  <span><b>③数据层</b> 核验行情/财务</span>
+  <span><b>④新闻层</b> 拉公告时间线</span>
+  <span><b>⑤研究员</b> 五维研究</span>
+  <span><b>⑥现实检验者</b> 质检</span>
+  <span><b>⑦编排者</b> 终稿交付</span>
+</div>
+
+<div class="card">
+  <div class="grid">
+    <div class="kpi"><div class="k">公司全称</div><div class="v" style="font-size:16px">长园科技集团股份有限公司</div></div>
+    <div class="kpi"><div class="k">代码 / 简称</div><div class="v" style="font-size:16px">600525.SH</div></div>
+    <div class="kpi"><div class="k">现价(08-24收盘)</div><div class="v">5.78 元</div></div>
+    <div class="kpi"><div class="k">总市值</div><div class="v">76.23 亿</div></div>
+    <div class="kpi"><div class="k">今日状态</div><div class="v"><span class="amber">停牌(摘帽日)</span></div></div>
+    <div class="kpi"><div class="k">风险类型</div><div class="v" style="font-size:15px"><span class="tag tag-warn">其他风险警示 ST</span></div></div>
+  </div>
+  <div class="box box-blue">
+    <b>⚠️ 最关键的认知区分</b>：ST长园被实施的是<b>其他风险警示（ST，9.8.1条·内控否定意见）</b>，<b>不是退市风险警示（*ST）</b>。
+    因此它今天发生的是<b>"摘帽"（撤销其他风险警示）</b>，<b>不是"摘星"（撤销退市风险警示）</b>，
+    二者难度与确定性天差地别。与监控池里那些靠"重整输血 / 年报保壳"的*ST票（如*ST发展、*ST中岩）本质不同——
+    长园是<b>"内控整改达标→摘帽"</b>，属于确定性最高的一类，无退市倒计时压力。
+  </div>
+</div>
+
+<h2>一、戴帽原因（根因清晰）</h2>
+<div class="card">
+  <table>
+    <tr><th>项目</th><th>内容</th></tr>
+    <tr><td>戴帽类型</td><td><b>其他风险警示（ST）</b>，依据《上交所上市规则》第 9.8.1 条第一款第(三)项</td></tr>
+    <tr><td>触发要件</td><td>2024 年度内部控制被审计机构<b class="red">上会会计师事务所出具否定意见</b>的《内部控制审计报告》</td></tr>
+    <tr><td>生效日</td><td>2025-04-30 起（简称由"长园集团"变"ST长园"）</td></tr>
+    <tr><td>根因</td><td>2023、2024 年公司<b>时任董事长吴启权</b>控制的企业（珠海市运泰利控股发展有限公司）通过第三方<b class="red">非经营性占用公司资金</b>，导致内控重大缺陷</td></tr>
+    <tr><td>资金占用处置</td><td>关联方需支付利息 2,158.98 万元，已于 2025-09-26 前全额清偿</td></tr>
+  </table>
+  <p class="sub">注：戴帽纯因"内控否定意见 + 资金占用"，并不涉及"净资产为负 / 营收不达标 / 财报被否"等财务类退市要件，故无*ST、无保壳倒计时。</p>
+</div>
+
+<h2>二、摘帽事件时间线（核心 · 已全部走完）</h2>
+<div class="card">
+  <div class="timeline">
+    <div class="tl"><div class="d">2025-12-31 前</div>公司针对财务报告内部控制重大缺陷完成整改</div>
+    <div class="tl"><div class="d">2026-04-27</div>北京德皓国际出具《内部控制审计报告》(德皓内字[2026]00000119)：认定 2025-12-31 在所有重大方面保持了<b class="green">有效的财务报告内部控制</b>（无保留）</div>
+    <div class="tl"><div class="d">2026-04-27</div>同日出具《影响已消除审核报告》(德皓核字[2026]00001181)：确认 2024 内控否定意见 + 财报保留意见<b class="green">涉及事项影响已消除</b></div>
+    <div class="tl"><div class="d">2026-08-14</div>公司向<b class="blue">上交所提交撤销其他风险警示申请</b></div>
+    <div class="tl"><div class="d">2026-08-15</div>披露《申请撤销其他风险警示公告》(编号 2026059)</div>
+    <div class="tl"><div class="d">2026-08-17（复牌）</div><b class="amber">申请摘帽后首个交易日</b>：开盘约4分钟即触涨停（ST期间±10%），全天巨量 46.3万手（约平日6倍），收 5.44（长上影）——典型"利好兑现、多空激烈博弈"</div>
+    <div class="tl"><div class="d">2026-08-24</div><b class="green">上交所同意撤销其他风险警示</b>（摘帽获批，确定性落地）</div>
+    <div class="tl"><div class="d">2026-08-25（今日）</div><b class="amber">停牌一天</b></div>
+    <div class="tl"><div class="d">2026-08-26（明日）</div><b class="green">复牌</b>，简称由"ST长园"恢复为"<b>长园集团</b>"，转出风险警示板，证券代码 600525 不变</div>
+  </div>
+  <div class="box"><b>确定性结论</b>：摘帽硬性条件（内控恢复无保留 + 否定/保留意见影响消除 + 不触及其他风险警示）<b>已全部满足，且上交所已书面同意</b>。这是"流程终点"而非"预期阶段"——与*ST发展（待法院受理重整）、*ST中岩（拟申请重整）的"预期博弈"截然不同。</div>
+</div>
+
+<h2>三、五维结构化分析</h2>
+
+<h3>① 业务结构</h3>
+<div class="card">
+  <p>核心主业为<b>智能电网设备与能源互联网技术服务</b>，由子公司长园深瑞、长园能源技术、长园电力、长园高能、长园共创承载。产品应用从传统电力系统延伸至：</p>
+  <div class="wf">
+    <span>新能源</span><span>节能</span><span>电动汽车充电</span><span>石油石化</span><span>钢铁冶金</span><span>轨道交通及电气化铁路</span>
+  </div>
+  <p class="sub">另含消费电子智能制造板块（运泰利系），但运泰利恰是资金占用方关联企业，治理瑕疵集中处。整体属"新型电力系统/电网设备"赛道，有实在产业底盘，非壳公司。</p>
+</div>
+
+<h3>② 运营状况</h3>
+<div class="card">
+  <table>
+    <tr><th>指标</th><th>状态</th></tr>
+    <tr><td>内控整改</td><td><span class="tag tag-ok">已完成</span> 专项整改小组 + 全面自查，2026-04 审计确认有效</td></tr>
+    <tr><td>资金占用</td><td><span class="tag tag-ok">已清偿</span> 占用利息 2158.98 万于 2025-09 前付清</td></tr>
+    <tr><td>治理层震荡</td><td><span class="tag tag-bad">重大负面</span> 时任董事长吴启权已辞职(2025-09)，其后涉嫌挪用资金被刑事立案(2026-06)，持股 8.02% 100% 冻结</td></tr>
+    <tr><td>监管立案</td><td><span class="tag tag-warn">已处罚</span> 公司因信披违规被证监会立案(2025-12-26)，2026-07 深圳证监局下发《处罚决定》：公司警告+罚160万，人员警告+合计260万</td></tr>
+    <tr><td>诉讼</td><td><span class="tag tag-warn">未决</span> 58名自然人诉证券虚假陈述纠纷，涉诉 281.87 万，尚未判决</td></tr>
+  </table>
+</div>
+
+<h3>③ 财务表现（2025 年报 + 2026H1 预告）</h3>
+<div class="card">
+  <div class="grid">
+    <div class="kpi"><div class="k">营业收入(2025)</div><div class="v">78.96 亿 <span class="sub">(+0.28%)</span></div></div>
+    <div class="kpi"><div class="k">归母净利润(2025)</div><div class="v red">-11.40 亿 <span class="sub">(-16.52%)</span></div></div>
+    <div class="kpi"><div class="k">扣非归母净利润</div><div class="v red">-8.53 亿</div></div>
+    <div class="kpi"><div class="k">资产负债率</div><div class="v amber">75.90%</div></div>
+    <div class="kpi"><div class="k">每股净资产</div><div class="v">2.12 元</div></div>
+    <div class="kpi"><div class="k">经营现金流</div><div class="v green">+8.07 亿</div></div>
+  </div>
+  <table style="margin-top:12px">
+    <tr><th>项目</th><th>说明</th></tr>
+    <tr><td>2025 审计意见</td><td>北京德皓国际出具<b class="green">带强调事项段的无保留意见</b>（轻档，非否定/保留）——说明 2024 的非标已消除</td></tr>
+    <tr><td>2025 内控审计</td><td><b class="green">无保留</b>（已恢复正常，摘帽核心前提）</td></tr>
+    <tr><td>分红能力</td><td>母公司未弥补亏损 -27.71 亿，<b class="amber">不满足现金分红条件</b></td></tr>
+    <tr><td>2026H1 预告</td><td>预计归母 <b class="green">3500万~5200万，同比扭亏为盈</b>（智能电网设备营收稳中有升）——摘帽后基本面亮点</td></tr>
+  </table>
+  <div class="box box-red"><b>财务软肋</b>：2025 全年仍巨亏（归母-11.4亿、扣非-8.5亿），主业的持续盈利能力尚未真正修复，扭亏高度依赖非经常性损益与 2026H1 的边际改善。摘帽解决的是"风险警示标签"，不解决"盈利质量"。</div>
+</div>
+
+<h3>④ 市场定位</h3>
+<div class="card">
+  <p>长园是<b>电网设备/新型电力系统</b>赛道的中型标的（市值约 76 亿），产业属性真实、客户以电网体系为主。在 ST 板块中属"<b>有主业、有营收、只是内控出过事</b>"的改良型样本，与纯保壳壳股区分明显。</p>
+  <p class="sub">摘帽后恢复普通交易（±10%，与 ST 期间新规一致），机构可重新纳入观察池；2026H1 扭亏预告 + 电网设备景气，使其在摘帽股中具备一定"基本面叙事"。</p>
+</div>
+
+<h3>⑤ 潜在风险</h3>
+<div class="card">
+  <table>
+    <tr><th>风险点</th><th>等级</th><th>说明</th></tr>
+    <tr><td>主业持续盈利未证真</td><td><span class="tag tag-bad">高</span></td><td>2025 扣非-8.5亿，扭亏靠非经；2026H1 预告盈利但仍需中报验证</td></tr>
+    <tr><td>原董事长刑事立案</td><td><span class="tag tag-bad">高</span></td><td>吴启权涉嫌挪用资金被立案侦查，持股 8.02% 100% 冻结/轮候冻结</td></tr>
+    <tr><td>信披违规处罚史</td><td><span class="tag tag-warn">中</span></td><td>已处罚（公司160万+人员260万），属历史污点，但已落地</td></tr>
+    <tr><td>虚假陈述诉讼</td><td><span class="tag tag-warn">中</span></td><td>58名自然人诉讼 281.87 万未决，影响暂不确定</td></tr>
+    <tr><td>负债率偏高</td><td><span class="tag tag-warn">中</span></td><td>75.9%，母公司未弥补亏损 27.7 亿</td></tr>
+    <tr><td>摘帽首日"卖事实"</td><td><span class="tag tag-warn">中</span></td><td>利好已充分预期，8-26 复牌易出现利好兑现波动</td></tr>
+  </table>
+</div>
+
+<h2>四、量价走势（摘帽前 · 真实日K）</h2>
+<div class="card">
+  <div class="grid">
+    <div class="kpi"><div class="k">最新收(08-24)</div><div class="v">5.78</div></div>
+    <div class="kpi"><div class="k">均线排列</div><div class="v green" style="font-size:15px">多头 MA5>10>20>60</div></div>
+    <div class="kpi"><div class="k">近60日区间</div><div class="v" style="font-size:15px">4.31 ~ 5.94</div></div>
+    <div class="kpi"><div class="k">8-17 量</div><div class="v amber">46.3万手</div></div>
+  </div>
+  <p style="margin-top:12px"><b>形态解读</b>：</p>
+  <ul style="margin-left:18px;font-size:13.5px">
+    <li><b>7月</b>：横盘偏弱，7-20 跳水至区间低 4.31（缩量），属"摘帽预期尚未定价"阶段</li>
+    <li><b>8月初~8-14</b>：缓慢爬升 4.7→5.07，量能温和，先知资金温和布局</li>
+    <li><b>8-17（摘帽申请公告后首交易日）</b>：跳空高开 5.45、开盘4分钟触涨停，但<b class="amber">全天巨量 46.3 万手（约平日6倍）、收长上影阴线 5.44</b>——典型"利好兑现、多空激烈博弈、上方抛压重"</li>
+    <li><b>8-18~8-24</b>：连续小阳推升至 5.78，量能回落至 17~25 万手，呈"缩量上行、惜售"特征</li>
+    <li><b>8-24</b>：收 5.78，盘中摸 5.94（上影 0.16），显示 5.9 上方仍有套牢/获利抛压</li>
+  </ul>
+  <div class="box box-blue"><b>资金意图（量价推断，非净流向数据）</b>：沙箱环境无法获取主力/游资/散户净流向（东财/腾讯/新浪资金接口均不可达），以上仅基于真实量价。综合看，摘帽预期已被<b class="green">温和提前定价</b>（8月缓涨），8-17 公告日放量长上影是"分歧换手"而非出货（其后缩量再创新高），<b>未见典型出货信号</b>。但 8-26 复牌当日"利好落地 + 5.9 上方抛压"并存，波动放大概率高。</div>
+</div>
+
+<h2>五、研究员研判结论（非投资建议）</h2>
+<div class="card">
+  <div class="box">
+    <b>定性</b>：ST长园是"<b>内控整改达标→摘帽</b>"的确定性范本，<b class="green">无退市风险、无保壳倒计时</b>，与监控池*ST票（财务类戴帽、靠重整/年报保壳）是两类资产。
+    <br><b>事件状态</b>：流程已走到终点（上交所 8-24 同意，8-26 复牌摘帽），今 8-25 停牌。
+    <br><b>核心矛盾</b>：标签已摘，但<b class="red">主业盈利质量未修复</b>（2025 扣非-8.5亿），且原董事长刑事立案/冻结、虚假陈述诉讼未决构成治理与法律尾部风险。
+    <br><b>短期（8-26 复牌）</b>：利好已充分预期，复牌首日"卖事实 + 5.9 上方抛压"并存，波动放大；若 2026H1 中报扭亏兑现且电网设备景气延续，则具备"摘帽+业绩修复"双击叙事，但需中报验证。
+    <br><b>中期</b>：看 2026 全年能否真正扭亏（扣非转正），决定摘帽后是"价值回归"还是"标签行情退潮"。
+  </div>
+</div>
+
+<h2>六、现实检验者 · 证据缺口与校正</h2>
+<div class="card">
+  <ul style="margin-left:18px;font-size:13.5px">
+    <li><span class="tag tag-info">校正</span> 明确区分 <b>ST(其他警示) ≠ *ST(退市警示)</b>、<b>摘帽 ≠ 摘星</b>，避免与前序*ST分析混淆。</li>
+    <li><span class="tag tag-info">缺口1</span> 2026H1 预告盈利 3500~5200 万为<b>预告值</b>，正式中报（约 2026-08 末/09 初）未出，扭亏尚需验证。</li>
+    <li><span class="tag tag-info">缺口2</span> 主力/游资/散户净流向因沙箱资金接口全封<b>无法获取</b>，量价推断已标注，精确数据需本地终端。</li>
+    <li><span class="tag tag-info">缺口3</span> 吴启权挪用资金案、58名自然人虚假陈述诉讼的<b>后续进展/判赔金额</b>尚无公开定论，为尾部法律风险。</li>
+    <li><span class="tag tag-ok">已交叉核验</span> 摘帽时间线、财务数据、戴帽原因均来自巨潮/上交所/中证报/上证报/证券时报多源一致披露，无矛盾。</li>
+  </ul>
+</div>
+
+<div class="foot">
+  <p>📁 本报告文件：<code>Temp\wb_analysis\ST长园_摘帽分析_20260825.html</code></p>
+  <p>⚠️ <b>免责声明</b>：本报告为基于公开披露的程序化研究框架，<b>不构成任何投资建议</b>。ST/*ST 及摘帽股波动剧烈、风险极高，所有结论以交易所/公司正式公告为准，请独立判断、自负盈亏。</p>
+</div>
+</body>
+</html>

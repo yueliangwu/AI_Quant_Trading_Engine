@@ -1,0 +1,12 @@
+{
+  "feishu_push_mode": "cli",
+  "feishu_webhook": "",
+  "feishu_secret": "",
+  "feishu_app_id": "",
+  "feishu_app_secret": "",
+  "feishu_receive_id": "ou_10cdef8ea8a202ab450597b1501eb8dd",
+  "lark_cli_path": "",
+  "deepseek_api_key": "",
+  "announcement_days": 7,
+  "max_retry": 3
+}

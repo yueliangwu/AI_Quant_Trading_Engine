@@ -1,0 +1,122 @@
+{
+  "sh600491": {
+    "name": "ST龙元",
+    "price": 1.82,
+    "chg_pct": 6.43,
+    "mktcap_yi": 27.84,
+    "k60_minlow": 0.91,
+    "k60_maxhigh": 1.85,
+    "k60_minclose": 0.92,
+    "up_from_minclose_pct": 97.8,
+    "drawdown_from_maxhigh_pct": -1.6,
+    "kcount": 71
+  },
+  "sz002634": {
+    "name": "*ST棒杰",
+    "price": 4.25,
+    "chg_pct": -0.7,
+    "mktcap_yi": 19.52,
+    "k60_minlow": 3.38,
+    "k60_maxhigh": 5.38,
+    "k60_minclose": 3.51,
+    "up_from_minclose_pct": 21.1,
+    "drawdown_from_maxhigh_pct": -21.0,
+    "kcount": 71
+  },
+  "sz000669": {
+    "name": "ST金鸿",
+    "price": 4.42,
+    "chg_pct": 4.0,
+    "mktcap_yi": 30.07,
+    "k60_minlow": 3.22,
+    "k60_maxhigh": 4.86,
+    "k60_minclose": 3.32,
+    "up_from_minclose_pct": 33.1,
+    "drawdown_from_maxhigh_pct": -9.1,
+    "kcount": 71
+  },
+  "sz002360": {
+    "name": "ST同德",
+    "price": 5.41,
+    "chg_pct": 0.0,
+    "mktcap_yi": 21.74,
+    "k60_minlow": 4.3,
+    "k60_maxhigh": 6.49,
+    "k60_minclose": 4.48,
+    "up_from_minclose_pct": 20.8,
+    "drawdown_from_maxhigh_pct": -16.6,
+    "kcount": 71
+  },
+  "sz002528": {
+    "name": "*ST英飞",
+    "price": 5.24,
+    "chg_pct": 2.34,
+    "mktcap_yi": 62.81,
+    "k60_minlow": 3.96,
+    "k60_maxhigh": 5.42,
+    "k60_minclose": 4.08,
+    "up_from_minclose_pct": 28.4,
+    "drawdown_from_maxhigh_pct": -3.3,
+    "kcount": 71
+  },
+  "sh603843": {
+    "name": "*ST正平",
+    "price": 6.94,
+    "chg_pct": 0.73,
+    "mktcap_yi": 48.55,
+    "k60_minlow": 5.07,
+    "k60_maxhigh": 9.37,
+    "k60_minclose": 5.27,
+    "up_from_minclose_pct": 31.7,
+    "drawdown_from_maxhigh_pct": -25.9,
+    "kcount": 71
+  },
+  "sh600537": {
+    "name": "*ST亿晶",
+    "price": 2.11,
+    "chg_pct": 0.0,
+    "mktcap_yi": 24.98,
+    "k60_minlow": 1.96,
+    "k60_maxhigh": 3.54,
+    "k60_minclose": 2.07,
+    "up_from_minclose_pct": 1.9,
+    "drawdown_from_maxhigh_pct": -40.4,
+    "kcount": 71
+  },
+  "sz002620": {
+    "name": "*ST瑞和",
+    "price": 5.0,
+    "chg_pct": 1.63,
+    "mktcap_yi": 18.87,
+    "k60_minlow": 3.89,
+    "k60_maxhigh": 10.89,
+    "k60_minclose": 4.11,
+    "up_from_minclose_pct": 21.7,
+    "drawdown_from_maxhigh_pct": -54.1,
+    "kcount": 71
+  },
+  "sh603377": {
+    "name": "ST东时",
+    "price": 2.9,
+    "chg_pct": 0.0,
+    "mktcap_yi": 20.96,
+    "k60_minlow": 2.54,
+    "k60_maxhigh": 3.88,
+    "k60_minclose": 2.64,
+    "up_from_minclose_pct": 9.8,
+    "drawdown_from_maxhigh_pct": -25.3,
+    "kcount": 71
+  },
+  "sz000826": {
+    "name": "*ST启环",
+    "price": 1.98,
+    "chg_pct": 3.13,
+    "mktcap_yi": 28.22,
+    "k60_minlow": 1.29,
+    "k60_maxhigh": 2.49,
+    "k60_minclose": 1.33,
+    "up_from_minclose_pct": 48.9,
+    "drawdown_from_maxhigh_pct": -20.5,
+    "kcount": 71
+  }
+}

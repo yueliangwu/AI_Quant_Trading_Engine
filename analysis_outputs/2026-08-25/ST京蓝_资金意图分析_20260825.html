@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ST京蓝(000711) 资金意图与系统性分析 · 2026-08-25</title>
+<style>
+  :root{ --bg:#fff; --card:#f7f8fa; --ink:#1a1a1a; --sub:#555; --line:#e3e6ea;
+         --red:#d8392b; --green:#1a8a3c; --blue:#1f6fe0; --amber:#b8860b; --purple:#6a3ea1; }
+  *{box-sizing:border-box;}
+  body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+       background:var(--bg); color:var(--ink); line-height:1.65; margin:0; padding:28px;}
+  .wrap{max-width:1080px; margin:0 auto;}
+  h1{font-size:25px; margin:0 0 4px;}
+  h2{font-size:19px; border-left:4px solid var(--blue); padding-left:10px; margin:30px 0 12px;}
+  h3{font-size:15.5px; margin:18px 0 8px; color:var(--sub);}
+  .meta{color:var(--sub); font-size:13px; margin-bottom:18px;}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin:12px 0;}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:10px 0;}
+  .kpi{background:#fff; border:1px solid var(--line); border-radius:8px; padding:12px; text-align:center;}
+  .kpi .v{font-size:20px; font-weight:700;}
+  .kpi .l{font-size:12px; color:var(--sub); margin-top:3px;}
+  .red{color:var(--red);} .green{color:var(--green);} .blue{color:var(--blue);} .amber{color:var(--amber);}
+  table{border-collapse:collapse; width:100%; font-size:13px; margin:8px 0;}
+  th,td{border:1px solid var(--line); padding:6px 8px; text-align:center;}
+  th{background:#eef1f5;}
+  tr:nth-child(even) td{background:#fafbfc;}
+  .badge{display:inline-block; font-size:11px; padding:2px 8px; border-radius:20px; background:#eef1f5; color:var(--sub); margin-right:6px;}
+  .warn{background:#fff4e5; border:1px solid #ffca7a; border-radius:8px; padding:12px 14px; margin:12px 0; font-size:13.5px;}
+  .key{background:#eaf3ff; border:1px solid #a9cdf5; border-radius:8px; padding:12px 14px; margin:12px 0;}
+  .phase{border-left:4px solid var(--purple); padding:8px 14px; margin:10px 0; background:#faf7ff;}
+  .flow{font-family:"SF Mono",Consolas,monospace; font-size:12.5px; background:#1e1e2e; color:#e6e6e6; padding:14px; border-radius:8px; white-space:pre; overflow-x:auto;}
+  ul{margin:6px 0 6px 4px; padding-left:20px;} li{margin:3px 0;}
+  .foot{font-size:12px; color:var(--sub); border-top:1px solid var(--line); margin-top:24px; padding-top:12px;}
+  .steps{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0;}
+  .step{font-size:12px; background:#eef1f5; border-radius:6px; padding:5px 10px;}
+  .step b{color:var(--blue);}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>ST京蓝（000711）资金意图与系统性分析</h1>
+<div class="meta">分析日期：2026-08-25（盘中 11:27 快照）｜工作流：提示词工程师→项目经理→数据层→新闻层→研究员→现实检验者→编排者｜数据：腾讯行情快照 + 腾讯日K（真实）+ 公开披露交叉</div>
+
+<div class="steps">
+  <span class="step"><b>①提示词</b> 定目标·资金意图为重点</span>
+  <span class="step"><b>②PM</b> 拆六维任务</span>
+  <span class="step"><b>③数据</b> 行情+量价+换手率</span>
+  <span class="step"><b>④新闻</b> 财务+摘帽公告</span>
+  <span class="step"><b>⑤研究员</b> 资金意图研判</span>
+  <span class="step"><b>⑥质检</b> 数据可用性核验</span>
+  <span class="step"><b>⑦编排</b> 终稿</span>
+</div>
+
+<div class="warn">
+<b>⚠️ 资金净流向数据可用性声明（必须先读）</b><br>
+本沙箱网络环境下，主力/游资/散户<b>净流向金额</b>的权威接口逐一验证均不可用：
+东方财富 push2 / push2his 资金日K → 404（主机封禁）；腾讯 zjlx 主力资金接口 → 已下线；新浪资金流 → 返回「Service not valid」。
+因此本报告<b>未编造任何净流向数字</b>。「资金意图」全部基于<b>真实量价关系 + 换手率（腾讯 f[38]=3.77%，真实字段）+ 大单量能分布（成交量级推断）</b>做定性研判，并明确标注。如需精确主力/游资/散户分档净流向，请在本地东财/同花顺终端查看。
+</div>
+
+<div class="card">
+<h3>一、标的身份与实时核验（腾讯快照 2026-08-25 盘中）</h3>
+<div class="grid">
+  <div class="kpi"><div class="v">ST京蓝</div><div class="l">000711 · 深主板</div></div>
+  <div class="kpi"><div class="v red">6.40</div><div class="l">现价（昨收6.60 / -3.03%）</div></div>
+  <div class="kpi"><div class="v">189.02亿</div><div class="l">总市值</div></div>
+  <div class="kpi"><div class="v blue">3.77%</div><div class="l">换手率（真实 f[38]）</div></div>
+  <div class="kpi"><div class="v">6.67 / 6.28</div><div class="l">今高 / 今低</div></div>
+  <div class="kpi"><div class="v">887,417手</div><div class="l">今日量（盘中半天）</div></div>
+</div>
+<p class="meta">风险状态：<b>其他风险警示（ST）</b>，非退市风险警示（*ST）。与监控池中的 *ST发展 / *ST中岩（退市警示类）属不同资产——京蓝戴帽根因是「行政处罚满12个月方可申请撤销」+ 持续经营，<b>无退市倒计时</b>，当前处于「摘帽」流程中。</p>
+</div>
+
+<div class="card">
+<h3>二、真实量价证据（近30日，腾讯日K，量单位：手）</h3>
+<table>
+<tr><th>日期</th><th>阴阳</th><th>开</th><th>收</th><th>高</th><th>低</th><th>实体</th><th>上影</th><th>下影</th><th>量(手)</th><th>阶段定性</th></tr>
+<tr><td>07-23</td><td class="red">阳</td><td>4.56</td><td>4.90</td><td>5.00</td><td>4.55</td><td>0.34</td><td>0.10</td><td>0.01</td><td>904,142</td><td rowspan="6">低位温和放量吸筹</td></tr>
+<tr><td>07-29</td><td class="green">阴</td><td>4.85</td><td>4.58</td><td>4.91</td><td>4.57</td><td>0.27</td><td>0.06</td><td>0.01</td><td>952,062</td></tr>
+<tr><td>08-03</td><td class="red">阳</td><td>4.84</td><td>4.94</td><td>4.99</td><td>4.80</td><td>0.10</td><td>0.05</td><td>0.04</td><td>637,499</td></tr>
+<tr><td>08-04</td><td class="red">阳</td><td>5.00</td><td>5.16</td><td>5.28</td><td>4.96</td><td>0.16</td><td>0.12</td><td>0.04</td><td>842,373</td></tr>
+<tr><td>08-05</td><td class="green">阴</td><td>5.21</td><td>5.17</td><td>5.35</td><td>5.13</td><td>0.04</td><td>0.14</td><td>0.04</td><td>904,813</td></tr>
+<tr><td>08-06</td><td class="green">阴</td><td>5.25</td><td>5.09</td><td>5.29</td><td>5.01</td><td>0.16</td><td>0.04</td><td>0.08</td><td>878,106</td></tr>
+<tr><td>08-07</td><td class="red">阳</td><td>5.09</td><td>5.57</td><td>5.60</td><td>5.07</td><td>0.48</td><td>0.03</td><td>0.02</td><td>1,313,374</td><td rowspan="6">放量启动+高位巨量换手</td></tr>
+<tr><td>08-10</td><td class="red">阳</td><td>5.62</td><td>5.78</td><td>5.85</td><td>5.53</td><td>0.16</td><td>0.07</td><td>0.09</td><td>1,196,701</td></tr>
+<tr><td>08-12</td><td class="red">阳</td><td>5.72</td><td>6.09</td><td>6.14</td><td>5.67</td><td>0.37</td><td>0.05</td><td>0.05</td><td>1,228,350</td></tr>
+<tr><td>08-13</td><td class="green">阴</td><td>6.14</td><td>6.05</td><td>6.39</td><td>5.91</td><td>0.09</td><td>0.25</td><td>0.14</td><td>1,441,642</td></tr>
+<tr><td>08-17</td><td class="green">阴</td><td>6.12</td><td>5.85</td><td>6.22</td><td>5.82</td><td>0.27</td><td>0.10</td><td>0.03</td><td>1,501,650</td></tr>
+<tr><td>08-18</td><td class="red">阳</td><td>5.78</td><td>5.88</td><td>6.02</td><td>5.38</td><td>0.10</td><td>0.14</td><td>0.40</td><td>1,662,923</td></tr>
+<tr><td>08-19</td><td class="red">阳</td><td>6.00</td><td>6.13</td><td>6.24</td><td>5.91</td><td>0.13</td><td>0.11</td><td>0.09</td><td>1,399,330</td><td rowspan="4">缩量锁仓推升</td></tr>
+<tr><td>08-20</td><td class="red">阳</td><td>5.87</td><td>6.11</td><td>6.18</td><td>5.81</td><td>0.24</td><td>0.07</td><td>0.06</td><td>1,058,155</td></tr>
+<tr><td>08-21</td><td class="red">阳</td><td>6.30</td><td>6.44</td><td>6.47</td><td>6.20</td><td>0.14</td><td>0.03</td><td>0.10</td><td>1,401,839</td></tr>
+<tr><td>08-24</td><td class="red">阳</td><td>6.38</td><td>6.60</td><td>6.74</td><td>6.28</td><td>0.22</td><td>0.14</td><td>0.10</td><td>1,307,269</td></tr>
+<tr><td>08-25</td><td class="green">阴</td><td>6.54</td><td>6.40</td><td>6.67</td><td>6.28</td><td>0.14</td><td>0.13</td><td>0.12</td><td>887,417*</td><td>事件兑现缩量回吐</td></tr>
+</table>
+<p class="meta">* 8-25 为盘中数据（截至 11:27），量仅为半天量，量比 0.65 为相对 MA5 量的半天参考，不具全日代表性。均线：MA5=6.336 / MA10=6.179 / MA20=5.652 / MA60=5.331，<b>多头排列</b>。近60日支撑 4.10、压力（前高）6.74。区间（2.85 低点起）最大涨幅 124.6%。</p>
+</div>
+
+<div class="card">
+<h3>三、资金意图研判：建仓吸筹 → 拉高换手洗盘 → 锁仓推升（非出货）</h3>
+
+<div class="phase"><b>阶段一 · 低位吸筹（7-23 ~ 8-06）</b>：价格 4.55→5.16，以小阳温和推升为主，单日量 58–95 万手，未放巨量。特征为「小步慢推、回调缩量」，典型低位主力分批建仓，尚未引起市场充分注意。</div>
+
+<div class="phase"><b>阶段二 · 放量启动 + 高位巨量换手（8-07 ~ 8-18）</b>：8-07 长阳启动（量 131 万，较前日均量近翻倍，实体 0.48）= 主力加仓/试盘信号。8-12~8-17 连续 5 日量 122–166 万手（全区间最大量能带），且伴随<b>长上影（8-13/8-17）与长下影（8-18 下影 0.40）交替</b>——多空激烈博弈、获利盘与新增资金高强度换手。<b>关键判别</b>：8-18 在 5.38 探底后被强力收回收 5.88（长下影），说明下档有强承接，<b>不是单边出货形态</b>（出货通常表现为放量滞涨、长上影无下影、或破位阴跌）。</div>
+
+<div class="phase"><b>阶段三 · 缩量锁仓推升 + 事件兑现回吐（8-19 ~ 8-25）</b>：8-18 巨量换手后，8-19~8-24 量逐步萎缩（140→106→140→131 万）却价格推升至 6.60（逼近前高 6.74），呈「缩量创新高」= 浮筹减少、主力控盘度提升的锁仓特征。8-24 晚间公司公告已向深交所提交<b>撤销其他风险警示申请</b>（公告 2026-079），盘中已提前反映（收 6.60）。8-25 缩量小阴 6.40（-3.03%）为「利好落地后卖事实」式整固，<b>缩量说明非恐慌出货</b>。</div>
+
+<div class="flow">资金轨迹（推断）：
+  低位 4.5        ──建仓吸筹──▶  温和放量小阳（7下-8初）
+       │
+  5.1 启动          ──放量长阳──▶  8-07 量131万 主力加仓
+       │
+  5.5→6.1           ──巨量换手──▶  8-12~8-17 量122-166万 长上下影博弈（洗盘+换手）
+       │                                  ↑非出货：8-18长下影强承接
+  6.0 锁仓          ──缩量推升──▶  8-19~8-24 缩量创新高 控盘度提升
+       │
+  6.60 事件         ──摘帽申请──▶  8-24晚公告  →  8-25 缩量小阴 整固（非出货）</div>
+
+<div class="key"><b>主力意图结论（量价推断，非实测净流向）</b>：<b>建仓吸筹 + 拉高换手洗盘 + 锁仓推升</b>三阶段清晰，当前处于「事件（摘帽申请）兑现前的浮盈整固」。<b>未见典型出货信号</b>（无放量滞涨、无破位长阴、未跌破 MA5）。但价格已处阶段高位（较 2.85 低点 +124%），乖离 MA20 仍达 +13.2%，获利盘沉重，对「利好兑现」极为敏感。</div>
+</div>
+
+<div class="card">
+<h3>四、技术面结论</h3>
+<ul>
+<li><b>均线</b>：MA5(6.34)＞MA10(6.18)＞MA20(5.65)＞MA60(5.33)，标准多头排列，趋势未破。</li>
+<li><b>支撑/压力</b>：近60日支撑 4.10；前高压力 6.74（8-24 触及未过）。有效跌破 6.0（MA10 附近）视为短期转弱信号；跌破 5.65（MA20）则趋势破坏。</li>
+<li><b>形态</b>：8 月以来「上升通道 + 高位巨量换手」，量价配合健康（涨时放量、调时缩量）。</li>
+<li><b>本周（8-25~8-29）区间预判</b>：6.10–6.90。变盘节点：① 深交所对摘帽申请的审核进展（核准则去ST溢价，但易「利好兑现冲高回落」）；② 6.74 前高能否放量突破。</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>五、基本面与摘帽进展</h3>
+<p><b>戴帽根因（ST·其他风险警示，非*ST）</b>：2020–2022 连续三年扣非为负+持续经营不确定性 → 被实施其他风险警示；2025-07 因 2020 年报虚假记载被叠加实施（行政处罚类）；2025-09-08 撤销退市风险警示（*ST→ST），其他警示保留。</p>
+<table>
+<tr><th>时间</th><th>事件</th><th>阶段</th></tr>
+<tr><td>2023-11</td><td>重整计划获批：资本公积转增、引入云南佳骏靶材（马黎阳）为产业投资人，化解约 88 亿债务，净资产转正</td><td>保壳落地</td></tr>
+<tr><td>2025-08-15</td><td>收到证监会《行政处罚决定书》</td><td>处罚起点</td></tr>
+<tr><td>2026-08-15</td><td>行政处罚满 12 个月 → 进入摘帽实质窗口</td><td>条件成熟</td></tr>
+<tr><td>2026-08-24</td><td>董事会审议通过 + <b>已向深交所提交撤销其他风险警示申请</b>（公告 2026-079）</td><td>申请提交</td></tr>
+<tr><td>待定</td><td>深交所审核（审核期不停牌）→ 核准后简称 ST京蓝→ST铟靶→铟靶新材</td><td>审核中</td></tr>
+</table>
+<p><b>财务</b>：2025 营收 4.75 亿（+25.76%）、归母 -2.11 亿、扣非 -2.09 亿、经营现金流 -9433 万、归母净资产 5.84 亿（为正）、审计标准无保留+内控有效。2026H1 营收 4.45 亿（+98.07%）、归母 7420 万（扭亏）、扣非 570 万（转正），资源回收收入 4.41 亿（+108%）。</p>
+<p><b>更名</b>：工商全称已变更为「铟靶新材（哈尔滨）股份有限公司」。</p>
+</div>
+
+<div class="card">
+<h3>六、风险与证据缺口（现实检验者标红）</h3>
+<ul>
+<li><b>「质量摘帽」存疑</b>：2025 扣非 -2.09 亿、2026Q1 扣非仍亏约 -2029 万，主业造血未真转正；摘帽为「形式达标（处罚满12月+审计合格）」。</li>
+<li><b>增收不增利</b>：精铟毛利率约 -1.83%（外采粗铟占比高、原料成本占 97.6%），资源回收业务仍亏毛利。</li>
+<li><b>ITO 靶材「画饼」</b>：产线处检修复产阶段，未正式量产、无收入利润，客户验证周期 2–3 年。</li>
+<li><b>资产注入逾期</b>：鑫联科技注入承诺已逾期；3 年内不得定增，仅能现金分批收购，资金链紧。</li>
+<li><b>监管瑕疵</b>：深交所已因靶材披露不实给予通报批评；截至 8-20 仍有 30 起投资者索赔在审（涉额 121.85 万元）。</li>
+<li><b>估值偏高</b>：现价 6.40 对应 PB≈32 倍（市值 189 亿 / 净资产 5.84 亿），靠预期支撑，容错率低。</li>
+<li><b>数据源缺口</b>：主力/游资/散户净流向金额因接口全封无法获取，本报告资金意图为量价推断，非实测分档数据；大单分布以成交量级（手）定性，未做逐笔委托还原。</li>
+</ul>
+</div>
+
+<div class="key">
+<b>综合结论（非投资建议）</b><br>
+ST京蓝（000711）是「重整保壳 + 铟周期 + ITO靶材 + 8月摘帽更名」的极端困境反转样本。<b>资金面</b>：近一月呈「低位吸筹→放量换手洗盘→缩量锁仓推升」轨迹，主力意图偏<b>锁仓待事件</b>，当前未见出货信号，但价格高位（较低点 +124%）、乖离仍大，对摘帽「利好兑现」敏感。<b>基本面</b>：摘帽形式条件已成熟（8-24 已提交申请），但扣非未真扭亏、靶材未量产、注入逾期三大现实未变。<b>研判</b>：事件驱动弹性仍在、确定性高于纯*ST保壳股，但属高风险博弈标的，不可当成长龙头长拿。
+</div>
+
+<div class="foot">
+数据来源：腾讯行情快照（qt.gtimg.cn）、腾讯日K（web.ifzq.gtimg.cn）、巨潮资讯/深交所公告（2026-079 等）、中国证券报、网易财经、SZSE.io 公司页。本报告为程序化研究框架，<b>非投资建议</b>；ST/*ST 属高风险品种，波动剧烈、退市/监管风险极高，请独立判断、自负盈亏。资金净流向因沙箱接口限制以量价推断呈现，精确数据请以本地券商终端为准。
+</div>
+</div>
+</body>
+</html>

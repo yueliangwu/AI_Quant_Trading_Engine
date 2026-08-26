@@ -1,0 +1,34 @@
+{
+  "generated": "2026-08-25",
+  "history": [
+    {
+      "name": "宁科(600165)",
+      "apply": "2026-08-15",
+      "approve": "2026-08-24",
+      "calendar_days": 9,
+      "trading_days": 6,
+      "note": "申请日以公司正式公告(上海证券报2026-047)为准；新浪/腾讯/央广新闻稿记作08-14，存在公开源分歧"
+    },
+    {
+      "name": "长圆(600525)",
+      "apply": "2026-08-14",
+      "approve": "2026-08-24",
+      "calendar_days": 10,
+      "trading_days": 7,
+      "note": "8-14申请→8-24上交所同意撤销其他风险警示"
+    }
+  ],
+  "history_avg": {
+    "calendar_days": 9.5,
+    "trading_days": 6.5
+  },
+  "jinglan": {
+    "apply": "2026-08-24",
+    "receipt": "2026-08-25",
+    "disclose": "2026-08-25",
+    "predict_main": "2026-09-02",
+    "predict_early": "2026-09-01",
+    "predict_upper_limit": "2026-09-15",
+    "rule_upper_limit_trading_days": 15
+  }
+}
